@@ -26,6 +26,7 @@ img {
 .img-bordered {
   margin: 10px;
   border: 7px solid var(--deep-green);
+  max-width: 40%;
 }
 
 .flex-container{
