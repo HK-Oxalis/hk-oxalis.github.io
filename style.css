@@ -3,6 +3,7 @@ html {
 }
 p {
   text-align: center;
+  margin: auto;
   background-color: rgba(255, 255, 255, 200);
 }
 
