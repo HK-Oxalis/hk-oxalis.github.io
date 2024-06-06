@@ -39,11 +39,16 @@ img {
 }
 
 .flex-item{
-  width: 50%
   border: 7px solid var(--deep-green);
   border-radius: 12px;
+  margin: 2%;
 }
 
 #doll-section{
+  width: 50%;
   border-color: var(--deep-purple);
+}
+
+#code-section{
+  width: 50%;
 }
