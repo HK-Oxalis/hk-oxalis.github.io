@@ -2,6 +2,7 @@
 :root{
   --background-green: #1c1f1c;
   --deep-green: #214521;
+  --deep-purple: #452136;
 }
 html {
   background-color: var(--background-green);
