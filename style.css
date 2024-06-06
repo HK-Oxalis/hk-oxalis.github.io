@@ -25,7 +25,7 @@ img {
 }
 
 .img-bordered {
-  margin: 10px;
+  margin: auto;
   border: 7px solid var(--deep-green);
    border-radius: 12px;
   max-width: 90%;
