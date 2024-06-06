@@ -11,3 +11,9 @@ h1 {
   text-align:center;
   color: white;
 }
+
+.flex-container{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
