@@ -44,11 +44,16 @@ img {
   margin: 2%;
 }
 
-#doll-section{
+.column{
   width: 50%;
+  margin: 5%;
+  border: 10px solid var(--deep-green);
+  border-radius: 12px;
+}
+
+#doll-section{
   border-color: var(--deep-purple);
 }
 
 #code-section{
-  width: 50%;
 }
