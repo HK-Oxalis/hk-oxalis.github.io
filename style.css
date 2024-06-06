@@ -25,6 +25,7 @@ img {
 }
 
 .img-bordered {
+  display: block;
   margin: auto;
   border: 7px solid var(--deep-green);
    border-radius: 12px;
