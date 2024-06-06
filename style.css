@@ -19,13 +19,14 @@ h1 {
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
 .img-bordered {
   margin: 10px;
   border: 7px solid var(--deep-green);
+   border-radius: 12px;
 }
 
 .img-hires {
@@ -34,7 +35,7 @@ img {
 
 .flex-container{
   display: flex;
-  
+  justify-content: center;
 }
 
 .flex-item{
