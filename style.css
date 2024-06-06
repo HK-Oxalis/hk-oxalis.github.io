@@ -18,6 +18,11 @@ h1 {
   color: white;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .img-bordered {
   margin: 10px;
   border: 7px solid var(--deep-green);
@@ -25,7 +30,7 @@ h1 {
 
 .flex-container{
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   justify-content: space-around;
   align-items: center;
   margin: 5%;
