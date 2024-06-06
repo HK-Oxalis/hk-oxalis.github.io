@@ -18,6 +18,11 @@ h1 {
   color: white;
 }
 
+.img-bordered {
+  margin: 10px;
+  border: 7px solid var(--deep-green);
+}
+
 .flex-container{
   display: flex;
   flex-flow: row wrap;
@@ -27,7 +32,7 @@ h1 {
 }
 
 .flex-item{
-  border: 5px solid var(--deep-green);
+  border: 7px solid var(--deep-green);
   border-radius: 12px;
 }
 
