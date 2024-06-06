@@ -3,6 +3,8 @@
   --background-green: #1c1f1c;
   --deep-green: #214521;
   --deep-purple: #452136;
+  --dull-green: #354635;
+  --dull-purple: #46353f;
 }
 html {
   background-color: var(--background-green);
@@ -43,20 +45,16 @@ img {
 
 .flex-item{
   border: 7px solid var(--deep-green);
+  background-color: var(--dull-green);
   border-radius: 12px;
   margin: 2%;
   flex: 50%;
 }
 
-.column{
-  width: 50%;
-  margin: 5%;
-  border: 10px solid var(--deep-green);
-  border-radius: 12px;
-}
 
 #doll-section{
   border-color: var(--deep-purple);
+  background-color: var(--dull-purple);
 }
 
 #code-section{
