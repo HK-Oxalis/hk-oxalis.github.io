@@ -1,5 +1,9 @@
+
+:root{
+  --background-green: #1c1f1c;
+}
 html {
-  background-color: black;
+  background-color: var(--background-green);
 }
 p {
   text-align: center;
