@@ -45,12 +45,19 @@ img {
 
 .flex-item{
   border: 7px solid var(--deep-green);
-  background-color: var(--dull-green);
   border-radius: 12px;
+  background-color: var(--dull-green);
   margin: 2%;
   flex: 50%;
 }
 
+.doll-style{
+  border: 7px solid var(--deep-green);
+  border-radius: 12px;
+  margin: 2%;
+  border-color: var(--deep-purple);
+  background-color: var(--dull-purple);
+}
 
 #doll-section{
   border-color: var(--deep-purple);
