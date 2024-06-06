@@ -30,17 +30,14 @@ img {
 
 .flex-container{
   display: flex;
-  flex-flow: row nowrap;
-  flex-grow: 0;
-  justify-content: space-around;
-  align-items: center;
-  margin: 5%;
+  
 }
 
 .flex-item{
   border: 7px solid var(--deep-green);
   border-radius: 12px;
   margin: 2%;
+  flex: 50%;
 }
 
 .column{
