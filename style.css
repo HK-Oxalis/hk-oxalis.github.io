@@ -28,6 +28,10 @@ img {
   border: 7px solid var(--deep-green);
 }
 
+.img-hires {
+  max-width: 500px;
+}
+
 .flex-container{
   display: flex;
   
