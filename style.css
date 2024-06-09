@@ -120,7 +120,7 @@ img {
 }
 
 /* Caption text */
-.text {
+.slide-text {
   padding: 8px 12px;
   position: absolute;
   bottom: 8px;
@@ -133,6 +133,7 @@ img {
   padding: 8px 12px;
   position: absolute;
   top: 0;
+  text-align: center;
 }
 
 /* The dots/bullets/indicators */
