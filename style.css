@@ -128,7 +128,8 @@ img {
 /* Caption text */
 .slide-text {
   font-size: 2vw;
-  color: gray;
+  color: white;
+  background-color: gray;
   padding: 8px 12px;
   position: absolute;
   bottom: 8px;
