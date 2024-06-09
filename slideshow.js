@@ -29,7 +29,6 @@ function show_Slides(slide_To_Show){
   }
 
   let active_Slide = slide_Index - 1;
-  print(slides);
-  slides[active_Slide].style.display = "block";
+  slides[1].style.display = "block";
   dots[active_Slide].className += " active";
 }
