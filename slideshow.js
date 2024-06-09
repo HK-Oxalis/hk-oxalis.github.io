@@ -16,7 +16,6 @@ function set_Slide(slide_Num){
 function show_Slides(slide_To_Show){
   let slides = document.getElementsByClassName("slide");
   let dots = document.getElementsByClassName("dot");
-  console.log(document.getElementsByClassName);
   console.log(slides);
 
   if(slide_To_Show > slides.length) {slide_Index = 1}
@@ -31,6 +30,7 @@ function show_Slides(slide_To_Show){
   }
 
   let active_Slide = slide_Index - 1;
+  console.log(slide_Index);
   slides[active_Slide].style.display = "block";
   dots[active_Slide].className += " active";
 }
