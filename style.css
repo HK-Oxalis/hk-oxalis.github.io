@@ -89,6 +89,7 @@ img {
 /* Hide the images by default */
 .slide {
   display: none;
+  text-align: center;
 }
 
 .img-slide{
@@ -142,7 +143,7 @@ img {
   padding: 8px 12px;
   position: absolute;
   top: 0;
-  text-align: center;
+
 }
 
 /* The dots/bullets/indicators */
