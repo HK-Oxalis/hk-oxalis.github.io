@@ -16,7 +16,7 @@ function show_Slides(slide_To_Show){
   let dots = document.getElementsByClassName("dot");
 
   if(slide_To_Show > slides.length) {slide_Index = 1}
-  if(slide_To_Show < 0) {slide_Index = slides.length}
+  if(slide_To_Show < 1) {slide_Index = slides.length}
 
 
   for (let i = 0; i < slides.length; i++) {
