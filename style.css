@@ -92,7 +92,8 @@ img {
 }
 
 .img-slide{
-  height: 20vw;
+  height: 30vw;
+  margin: auto;
 }
 
 /* Next & previous buttons */
@@ -124,6 +125,8 @@ img {
 
 /* Caption text */
 .slide-text {
+  font-size: 3vw;
+  color: white;
   padding: 8px 12px;
   position: absolute;
   bottom: 8px;
@@ -133,6 +136,8 @@ img {
 
 /* Number text (1/3 etc) */
 .numbertext {
+  font-size: 3vw;
+  color: white;
   padding: 8px 12px;
   position: absolute;
   top: 0;
