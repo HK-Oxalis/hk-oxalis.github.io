@@ -89,6 +89,9 @@ img {
 /* Hide the images by default */
 .slide {
   display: none;
+}
+
+.img-slide{
   height: 20vw;
 }
 
