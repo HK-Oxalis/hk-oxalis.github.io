@@ -21,12 +21,14 @@ function show_Slides(slide_To_Show){
   if(slide_To_Show < 0) {slide_Index = slides.length}
 
 
-  for (i = 0; i < slides.length; i++) {
+  for (let i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
-  for (i = 0; i < dots.length; i++) {
+  for (let i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slide_Index - 1].style.display = "block";
-  dots[slide_Index - 1].className += " active";
+
+  let active_Slide = slide_Index - 1;
+  slides[active_Slide].style.display = "block";
+  dots[active_Slide].className += " active";
 }
