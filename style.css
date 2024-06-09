@@ -89,6 +89,7 @@ img {
 /* Hide the images by default */
 .slide {
   display: none;
+  height: 20vw;
 }
 
 /* Next & previous buttons */
