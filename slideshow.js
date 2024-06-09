@@ -1,8 +1,6 @@
 
 let slide_Index = 1;
 
-show_Slides(slide_Index);
-
 function add_Slides(slides_To_Add) {
   slide_Index += slides_To_Add;
   show_Slides(slide_Index);
@@ -34,3 +32,5 @@ function show_Slides(slide_To_Show){
   slides[active_Slide].style.display = "block";
   dots[active_Slide].className += " active";
 }
+
+show_Slides(slide_Index);
