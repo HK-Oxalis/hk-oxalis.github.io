@@ -14,7 +14,7 @@ html {
 p {
   text-align: center;
   margin: auto;
-  background-color: var(--background-green);
+  background-color: var(--pale-green);
   font-size: 3vw;
 }
 
