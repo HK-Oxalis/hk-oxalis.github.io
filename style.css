@@ -30,6 +30,10 @@ h2 {
   color: white;
 }
 
+article{
+  margin: 8px;
+}
+
 img {
   max-width: 100%;
   height: auto;
