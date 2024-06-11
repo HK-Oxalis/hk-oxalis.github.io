@@ -5,6 +5,8 @@
   --deep-purple: #452136;
   --dull-green: #354635;
   --dull-purple: #46353f;
+  --pale-green: #384d38;
+  --pale-purple: #684458;
 }
 html {
   background-color: var(--background-green);
@@ -12,7 +14,7 @@ html {
 p {
   text-align: center;
   margin: auto;
-  background-color: rgba(255, 255, 255, 200);
+  background-color: var(--background-green);
   font-size: 3vw;
 }
 
@@ -65,6 +67,10 @@ img {
   margin: 2%;
   border-color: var(--deep-purple);
   background-color: var(--dull-purple);
+}
+
+p.doll-style{
+  background-color: var(--pale-purple);
 }
 
 #doll-section{
