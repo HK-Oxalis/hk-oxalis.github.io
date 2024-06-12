@@ -7,9 +7,9 @@ function Change_Image() {
   let userFile = document.getElementById("image-input").value;
   userFile = userFile.replace("C:\\fakepath\\", "");
   console.log(userFile);
-  let userFileURL = URL.createObjectURL(userFile);
+  //let userFileURL = URL.createObjectURL(userFile);
   
-  backgroundImage = loadImage(userFileURL, loop(), Image_Error());
+  backgroundImage = loadImage(userFile, loop, Image_Error);
 }
 
 function Image_Error(){
