@@ -8,8 +8,14 @@ function Change_Image() {
   userFile = userFile.replace("C:\\fakepath\\", "");
   console.log(userFile);
   //let userFileURL = URL.createObjectURL(userFile);
+
+  const reader = new FileReader();
+    reader.onload = (e) => {
+      backgroundImage = loadImage(e.target.result, loop, Image_Error);
+    };
+  reader.readAsDataURL(file);
   
-  backgroundImage = loadImage(userFile, loop, Image_Error);
+  
 }
 
 function Image_Error(){
@@ -44,7 +50,7 @@ function setup() {
 }
 
 function draw() {
-  
+  exampleShader.setUniform("background", backgroundImage);
   
   //ellipse(0, 0, width, height, 150);
   rect(0, 0, width, height);
