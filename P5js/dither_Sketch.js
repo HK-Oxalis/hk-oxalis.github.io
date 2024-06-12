@@ -19,9 +19,7 @@ function Image_Error(){
 function Image_Loaded(file){
   if (file.type === 'image') {
     backgroundImage = loadImage(file.data, loop(), Image_Error());
-    img.hide();
-  } else {
-    img = null;
+  }
 
 }
 
