@@ -4,7 +4,12 @@ let colourFactor = 1;
 let ditherpattern;
 
 function Change_Image() {
-  console.log("image changed");
+  let userFile = document.getElementById("image-input").value;
+  backgroundImage = loadImage(userFile, loop(), Image_Error());
+}
+
+function Image_Error(){
+  console.log("Image failed to load");
 }
 
 function preload(){
@@ -14,7 +19,7 @@ function preload(){
 }
 
 function setup() {
-  let canvas = document.getElementById("main-canvas");
+  var canvas = document.getElementById("main-canvas");
   createCanvas(400, 400, WEBGL, canvas);
   
   shader(exampleShader);
