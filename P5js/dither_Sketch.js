@@ -5,7 +5,7 @@ let ditherpattern;
 
 function Change_Image() {
   let userFile = document.getElementById("image-input").value;
-  userFile = userFile.replace("C:\\fakepath\\", "");
+  //userFile = userFile.replace("C:\\fakepath\\", "");
   console.log(userFile);
   //let userFileURL = URL.createObjectURL(userFile);
 
@@ -13,7 +13,7 @@ function Change_Image() {
     reader.onload = (e) => {
       backgroundImage = loadImage(e.target.result, loop, Image_Error);
     };
-  reader.readAsDataURL(file);
+  reader.readAsDataURL(userFile);
   
   
 }
