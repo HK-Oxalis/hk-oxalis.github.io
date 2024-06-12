@@ -70,6 +70,7 @@ img {
   border-radius: 12px;
   margin: 2%;
   background-color: var(--dull-purple);
+  text-align: center;
 }
 
 .doll-style p{
@@ -85,6 +86,7 @@ img {
   border-radius: 12px;
   margin: 2%;
   background-color: var(--dull-green);
+  text-align: center;
 }
 
 .code-style p{
