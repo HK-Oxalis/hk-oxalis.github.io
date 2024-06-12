@@ -16,6 +16,15 @@ function Image_Error(){
   console.log("Image failed to load");
 }
 
+function Image_Loaded(file){
+  if (file.type === 'image') {
+    backgroundImage = loadImage(file.data, loop(), Image_Error());
+    img.hide();
+  } else {
+    img = null;
+
+}
+
 function preload(){
   exampleShader = loadShader("P5js/example.vert", "P5js/dither.frag");
   backgroundImage = loadImage("Images/betta2_dithered.png");
@@ -32,6 +41,8 @@ function setup() {
   exampleShader.setUniform("ditherImg", dither_Pattern);
   exampleShader.setUniform("factor", colourFactor);
   noStroke();
+
+  CreateFileInput(Image_Loaded);
 }
 
 function draw() {
