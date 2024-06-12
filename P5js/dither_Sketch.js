@@ -40,7 +40,7 @@ function setup() {
   exampleShader.setUniform("factor", colourFactor);
   noStroke();
 
-  createFileInput(Image_Loaded);
+  //createFileInput(Image_Loaded);
 }
 
 function draw() {
