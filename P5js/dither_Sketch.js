@@ -5,6 +5,7 @@ let ditherpattern;
 
 function Change_Image() {
   let userFile = document.getElementById("image-input").value;
+  console.log(userFile);
   let userFileURL = URL.createObjectURL(userFile);
   
   backgroundImage = loadImage(userFileURL, loop(), Image_Error());
