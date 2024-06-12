@@ -2,14 +2,11 @@ let exampleShader;
 let backgroundImage;
 let colourFactor = 1;
 let ditherpattern;
-let ditherMatrix = [0,  8,  2,  10,
-                    12, 4,  14, 6,
-                     3,  11, 1,  9,
-                    15, 7,  13, 5];
+
 function preload(){
-  exampleShader = loadShader("example.vert", "dither.frag");
-  backgroundImage = loadImage("elgbetta.jpg");
-  dither_Pattern = loadImage("Dither_pattern.png");
+  exampleShader = loadShader("P5js/example.vert", "P5js/dither.frag");
+  backgroundImage = loadImage("P5js/elgbetta.jpg");
+  dither_Pattern = loadImage("P5js/Dither_pattern.png");
 }
 
 function setup() {
@@ -20,7 +17,6 @@ function setup() {
   exampleShader.setUniform("background", backgroundImage);
   exampleShader.setUniform("ditherImg", dither_Pattern);
   exampleShader.setUniform("factor", colourFactor);
-  exampleShader.setUniform("matrix", ditherMatrix);
   noStroke();
 }
 
