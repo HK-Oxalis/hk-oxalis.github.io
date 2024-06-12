@@ -3,6 +3,10 @@ let backgroundImage;
 let colourFactor = 1;
 let ditherpattern;
 
+function Change_Image() {
+  console.log("image changed");
+}
+
 function preload(){
   exampleShader = loadShader("P5js/example.vert", "P5js/dither.frag");
   backgroundImage = loadImage("P5js/elgbetta.jpg");
