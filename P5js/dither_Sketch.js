@@ -10,7 +10,8 @@ function preload(){
 }
 
 function setup() {
-  createCanvas(400, 400, WEBGL);
+  let canvas = document.getElementById("main-canvas");
+  createCanvas(400, 400, WEBGL, canvas);
   
   shader(exampleShader);
   
