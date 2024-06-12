@@ -9,7 +9,7 @@ function Change_Image() {
 
 function preload(){
   exampleShader = loadShader("P5js/example.vert", "P5js/dither.frag");
-  backgroundImage = loadImage("P5js/elgbetta.jpg");
+  backgroundImage = loadImage("Images/betta2_dithered.png");
   dither_Pattern = loadImage("P5js/Dither_pattern.png");
 }
 
