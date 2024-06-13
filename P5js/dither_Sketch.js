@@ -7,26 +7,15 @@ function Change_Image() {
   let userFile = document.getElementById("image-input").files;
   //userFile = userFile.replace("C:\\fakepath\\", "");
   console.log(userFile);
-  //let userFileURL = URL.createObjectURL(userFile);
+  let userFileURL = URL.createObjectURL(userFile);
 
-  const reader = new FileReader();
-    reader.onload = (e) => {
-      backgroundImage = loadImage(e.target.result, loop, Image_Error);
-    };
-  reader.readAsDataURL(userFile[0]);
+  backgroundImage = loadImage(userFileURL, draw);
   
   
 }
 
 function Image_Error(){
   console.log("Image failed to load");
-}
-
-function Image_Loaded(file){
-  if (file.type === 'image') {
-    backgroundImage = loadImage(file.data, loop, Image_Error);
-  }
-
 }
 
 function preload(){
