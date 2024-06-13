@@ -4,7 +4,7 @@ let colourFactor = 1;
 let ditherpattern;
 
 function Change_Image() {
-  let userFile = document.getElementById("image-input").value;
+  let userFile = document.getElementById("image-input");
   //userFile = userFile.replace("C:\\fakepath\\", "");
   console.log(userFile);
   //let userFileURL = URL.createObjectURL(userFile);
