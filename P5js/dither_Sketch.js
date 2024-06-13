@@ -4,7 +4,7 @@ let colourFactor = 1;
 let ditherpattern;
 
 function Change_Image() {
-  let userFile = document.getElementById("image-input").file;
+  let userFile = document.getElementById("image-input").files;
   //userFile = userFile.replace("C:\\fakepath\\", "");
   console.log(userFile);
   //let userFileURL = URL.createObjectURL(userFile);
@@ -13,7 +13,7 @@ function Change_Image() {
     reader.onload = (e) => {
       backgroundImage = loadImage(e.target.result, loop, Image_Error);
     };
-  reader.readAsDataURL(userFile);
+  reader.readAsDataURL(userFile[0]);
   
   
 }
