@@ -42,8 +42,8 @@ function draw() {
   exampleShader.setUniform("background", backgroundImage);
   exampleShader.setUniform("ditherImg", dither_Pattern);
   exampleShader.setUniform("factor", colourFactor);
-  
-  //ellipse(0, 0, width, height, 150);
-  rect(0, 0, width, height);
+
+  background(0);
+  rect(0, 0, backgroundImage.width, backgroundImage.height);
   noLoop();
 }
