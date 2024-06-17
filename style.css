@@ -48,6 +48,10 @@ img {
   max-width: 90%;
 }
 
+.doll-style .img-bordered {
+  border-color: var(--deep-purple);
+}
+
 .img-hires {
   max-width: 500px;
 }
