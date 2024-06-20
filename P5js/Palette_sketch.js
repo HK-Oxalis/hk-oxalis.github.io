@@ -19,8 +19,8 @@ function Change_Settings(){
 }
 
 function preload(){
-  exampleShader = loadShader("example.vert", "Palette.frag");
-  backgroundImage = loadImage("elgbetta.jpg");
+  exampleShader = loadShader("P5js/example.vert", "P5js/Palette.frag");
+  backgroundImage = loadImage("Images/jade_hare_photo.png");
 }
 
 function setup() {
