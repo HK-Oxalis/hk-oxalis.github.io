@@ -15,6 +15,8 @@ function Change_Settings(){
   palette_Hue = document.getElementById("hue-check").checked;
   palette_Saturation = document.getElementById("saturation-check").checked;
   palette_Value = document.getElementById("value-check").checked;
+
+  console.log(palette_Hue);
   draw();
 }
 
