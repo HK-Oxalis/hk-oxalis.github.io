@@ -4,6 +4,14 @@ let palette_Hue = true;
 let palette_Saturation = true;
 let palette_Value = true;
 
+function Change_Image() {
+  let userFile = document.getElementById("image-input").files;
+  let userFileURL = URL.createObjectURL(userFile[0]);
+
+  backgroundImage = loadImage(userFileURL, draw);  
+  
+}
+
 function preload(){
   exampleShader = loadShader("example.vert", "Palette.frag");
   backgroundImage = loadImage("elgbetta.jpg");
