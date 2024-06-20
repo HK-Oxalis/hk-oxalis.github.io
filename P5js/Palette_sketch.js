@@ -9,7 +9,10 @@ function Change_Image() {
   let userFileURL = URL.createObjectURL(userFile[0]);
 
   backgroundImage = loadImage(userFileURL, draw);  
-  
+}
+
+function Change_Settings(){
+  draw();
 }
 
 function preload(){
@@ -18,7 +21,8 @@ function preload(){
 }
 
 function setup() {
-  createCanvas(400, 400, WEBGL);
+  var canvas = document.getElementById("main-canvas");
+  createCanvas(400, 400, WEBGL, canvas);
   
   shader(exampleShader);
   
