@@ -2,19 +2,40 @@
 <html>
 <head>
   <link rel="stylesheet" type="text/css" href="style.css">
-  <title>Mermaid Arms</title>
+  <title>Palettisation</title>
 </head>
 <body>
   <header>
     <h1>
-      A Mermaid's Arms
+      Applying Palettes To Images
     </h1>
     
   </header>
 
   <section class="code-style">
-    
+    <h2>What and Why?</h2>
+    <p>Work in progress</p>
+   <p>What is palettisation? Well, it's essentially posterisation, where all colours are snapped to a few limited values, but in this case the values are predefined.</p>
   </section>
+ <section class="code-style">
+  <h2>Execution</h2>
+  <p>For this one I’m mostly translating a shader I wrote in Unity for college. The key part is this section, which takes two colours and a target colour and returns the one closest to the target colour.
+</p>
+  <img src="Images/Code_ClosestColour.PNG" alt="A section of code.">
+  <p>Apologies for the poor highlighting, the online p5js editor isn’t very good for shaders. I’ve tried to be as descriptive as I can with the variable names. To break it down, find the difference between each colour and the target colour and then return the one with the lowest difference.</p>
+  <br>
+  <p>Defining the colour palettes is annoying if I just do it through a const array, and the GLSL arrays don’t seem to be behaving themselves.</p>
+  <img src="Images/Code_ArrayError.PNG" alt="An error message reading [array constructor supported in GLSL ES 3.00 and above only]">
+  <p>Ah, I see. If I want to use p5js, then I’m stuck in GLSL 1.0. And GLSL 1 does not like arrays for some reason. </p>
+  <p>...</p>
+  <img src="Images/Code_ColourVariables.PNG" alt="Eight individual variable definitions, named colour 1 to 8, defining rgb colours one number at a time.">
+  <p>I mean, if it works, it works. There’d be a better way of setting colours in a real game engine anyway. I also have some ideas about getting palettes from images, like the ones the Lospec site exports. Loops and arrays are objectively better for this, but this’ll work for debugging, as long as I remember to normalise my rgb values. </p>
+  <br>
+  <p>(White screen not pictured)</p>
+  <br>
+  <img src="Images/Betta_Palettised.png" alt="A photo of a betta fish, palettised. It's mostly a pale pink, with the silhouette of its fins in light green and the deeper shadows picked out in solid shapes of darker greens and purples">
+  <p>That’s pretty cool, isn’t it? It’s palettised to the colour scheme I use on this website. Check out the shadows in the scales! But my real favourite part of this is when we get HSV involved.</p>
+ </section>
 
 </body>
 </html>
