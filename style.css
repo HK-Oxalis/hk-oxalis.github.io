@@ -29,6 +29,11 @@ h2 {
   font-size: 10vmin;
   color: white;
 }
+h2 {
+  text-align:center;
+  font-size: 8vmin;
+  color: white;
+}
 
 article{
   margin: 8px;
