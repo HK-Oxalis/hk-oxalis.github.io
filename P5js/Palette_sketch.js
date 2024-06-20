@@ -20,7 +20,7 @@ function Change_Settings(){
 
 function preload(){
   exampleShader = loadShader("P5js/example.vert", "P5js/Palette.frag");
-  backgroundImage = loadImage("Images/jade_hare_photo.png");
+  backgroundImage = loadImage("P5js/elgbetta.jpg");
 }
 
 function setup() {
