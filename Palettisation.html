@@ -15,8 +15,11 @@
 
   <section class="code-style">
     <h2>What and Why?</h2>
-    <p>Work in progress</p>
-   <p>What is palettisation? Well, it's essentially posterisation, where all colours are snapped to a few limited values, but in this case the values are predefined.</p>
+    <p>Let’s start by talking about posterisation. Posterisation is a way of snapping all colours in an image to some amount of limited values. This creates flat blocks of colour and strange ‘rainbow’ patterns in the edges of light and dark. You often see it in horror games like Buckshot Roulette and Lethal Company, but it’s not like horror has a monopoly in rainbows.</p>
+   <br>
+   <p>The problem is, if you want to use it for a different mood, you need more control of what colours appear. You need control of the <i>palette</i>. Palettes aren’t that relevant in most art, but pixel art historically sticks very closely to limited palettes, and pixel art specific programs like Aseprite do it automatically. </p>
+   <br>
+   <p>I’ve spent some time working on pixel art shaders, and the typical ‘cheat’ way to use palettes is to just greyscale the image and have your palette in exact brightness order, but that’s not useful if you want multiple different colours and it doesn’t take an arbitrary palette well. That’s what I want to fix here.</p>
   </section>
  <section class="code-style">
   <h2>Execution</h2>
@@ -34,7 +37,7 @@
   <br>
   <p>(White screen not pictured)</p>
   <br>
-  <img style="height: 50vmin;" src="Images/Betta_Palettised.png" alt="A photo of a betta fish, palettised. It's mostly a pale pink, with the silhouette of its fins in light green and the deeper shadows picked out in solid shapes of darker greens and purples">
+  <img style="height: 50vmin; filter: brightness: 150%;" src="Images/Betta_Palettised.png" alt="A photo of a betta fish, palettised. It's mostly a pale pink, with the silhouette of its fins in light green and the deeper shadows picked out in solid shapes of darker greens and purples">
   <p>That’s pretty cool, isn’t it? It’s palettised to the colour scheme I use on this website. Check out the shadows in the scales! But my real favourite part of this is when we get HSV involved.</p>
  </section>
 
