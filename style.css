@@ -39,6 +39,15 @@ article{
   margin: 8px;
 }
 
+button{
+  scale: 5min;
+}
+
+checkbox {
+  scale: 6vmin;
+}
+
+
 img {
   max-width: 100%;
   height: auto;
