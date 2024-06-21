@@ -8,30 +8,29 @@
   --pale-green: #384d38;
   --pale-purple: #684458;
 }
-html {
+html, body {
   background-color: var(--background-green);
+  font-size: 5vmin;
+  text-align: center;
 }
 p {
-  text-align: center;
   margin: auto;
   background-color: var(--pale-green);
   font-size: 5vmin;
 }
 
+
 h1 {
-  text-align:center;
   font-size: 12vmin;
   color: white;
 }
 
 h2 {
-  text-align:center;
   font-size: 10vmin;
   color: white;
 }
 
 h3 {
-  text-align:center;
   font-size: 8vmin;
   color: white;
 }
@@ -80,7 +79,6 @@ img {
   border-radius: 12px;
   margin: 2%;
   background-color: var(--dull-purple);
-  text-align: center;
 }
 
 .doll-style p{
@@ -96,7 +94,7 @@ img {
   border-radius: 12px;
   margin: 2%;
   background-color: var(--dull-green);
-  text-align: center;
+  
 }
 
 .code-style p{
