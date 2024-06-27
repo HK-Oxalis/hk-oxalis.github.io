@@ -12,7 +12,28 @@
     </h1>
     
   </header>
+   
+ <section class="code-style">
+  <h2>Live shader</h2>
+  <canvas id="main-canvas" class="code-style" width="50%" height="50%"></canvas>
+   <p>Upload an image below to run the shader on it!</p>
 
+   <input type="file" id="image-input" name="image-input" accept="image/*">
+   <button type="button" OnClick="Change_Image()">Run</button>
+
+   <br>
+  <p>Select which attributes to apply palettisation to!</p>
+  <br>
+  <input type="checkbox" id="hue-check" name="hue-check" checked>
+  <label for="hue-check">Hue</label> <br>
+  <input type="checkbox" id="saturation-check" name="saturation-check" checked>
+  <label for="saturation-check">Saturation</label> <br>
+  <input type="checkbox" id="value-check" name="value-check" checked>
+  <label for="value-check">Value</label>
+  <button type="button" OnClick="Change_Settings()">Change</button>
+   <script src="P5js/Palette_sketch.js"></script>
+ </section>
+ 
   <section class="code-style">
     <h2>What and Why?</h2>
     <p>Let’s start by talking about posterisation. Posterisation is a way of snapping all colours in an image to some amount of limited values. This creates flat blocks of colour and strange ‘rainbow’ patterns in the edges of light and dark. You often see it in horror games like Buckshot Roulette and Lethal Company, but it’s not like horror has a monopoly in rainbows.</p>
@@ -52,23 +73,7 @@
   <p>There were a few typos and the like, but now everything's done so you can play around below! My favourite configuration is still hue and saturation but no value, but see what you think! There are a few image artifacts that appear in certain settings, the brightness is a bit low when the Value is palettised, and I'd like to let the user select a palette, but not today.</p>
  </section>
 
- <section class="code-style">
-  <canvas id="main-canvas" class="code-style" width="50%" height="50%"></canvas>
-   <p>Upload an image below to run the shader on it!</p>
 
-   <input type="file" id="image-input" name="image-input" accept="image/*">
-   <button type="button" OnClick="Change_Image()">Run</button>
-
-   <br>
-  <input type="checkbox" id="hue-check" name="hue-check" checked>
-  <label for="hue-check">Hue</label> <br>
-  <input type="checkbox" id="saturation-check" name="saturation-check" checked>
-  <label for="saturation-check">Saturation</label> <br>
-  <input type="checkbox" id="value-check" name="value-check" checked>
-  <label for="value-check">Value</label>
-  <button type="button" OnClick="Change_Settings()">Change</button>
-   <script src="P5js/Palette_sketch.js"></script>
- </section>
 
 </body>
 </html>
