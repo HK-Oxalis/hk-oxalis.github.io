@@ -22,6 +22,14 @@ function Change_Settings(){
   draw();
 }
 
+function Change_Palette() {
+  palette_Size = document.getElementById("palette-size").value
+  let userFile = document.getElementById("palette-input").files;
+  let userFileURL = URL.createObjectURL(userFile[0]);
+
+  paletteImage = loadImage(userFileURL, draw);  
+}
+
 function preload(){
   exampleShader = loadShader("P5js/example.vert", "P5js/Palette.frag");
   backgroundImage = loadImage("P5js/elgbetta.jpg");
