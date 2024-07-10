@@ -20,7 +20,7 @@
 
    <input type="file" id="image-input" name="image-input" accept="image/*">
    <button type="button" OnClick="Change_Image()">Run</button>
-
+  
    <br>
   <p>Select which attributes to apply palettisation to!</p>
   <br>
@@ -31,7 +31,17 @@
   <input type="checkbox" id="value-check" name="value-check" checked>
   <label for="value-check">Value</label>
   <button type="button" OnClick="Change_Settings()">Change</button>
-   <script src="P5js/Palette_sketch.js"></script>
+
+  <details>
+   <summary>Or add your own palette!</summary>
+   <input type="file" id="palette-input" name="palette-input" accept="image/*">
+   <label for="palette-size">How big is your palette? (maximum size of 20)</label>
+   <input type="number" id="palette-size" name="palette-size" min="1" max="20">
+   
+   <button type="button" OnClick="Change_Palette()">Run</button>
+  </details>
+
+  <script src="P5js/Palette_sketch.js"></script>
  </section>
  
   <section class="code-style">
