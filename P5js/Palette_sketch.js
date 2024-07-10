@@ -1,5 +1,7 @@
 let exampleShader;
 let backgroundImage;
+let paletteImage;
+let palette_Size = 8;
 let palette_Hue = true;
 let palette_Saturation = true;
 let palette_Value = true;
@@ -23,6 +25,7 @@ function Change_Settings(){
 function preload(){
   exampleShader = loadShader("P5js/example.vert", "P5js/Palette.frag");
   backgroundImage = loadImage("P5js/elgbetta.jpg");
+  paletteImage = loadImage("P5js/portfolio_Palette_8.png")
 }
 
 function setup() {
@@ -38,6 +41,8 @@ function setup() {
 
 function draw() {
   exampleShader.setUniform("background", backgroundImage);
+  exampleShader.setUniform("palette_Img", paletteImage)
+  exampleShader.setUniform("palette_Size", palette_Size)
   exampleShader.setUniform("palette_Hue", palette_Hue);
   exampleShader.setUniform("palette_Saturation", palette_Saturation);
   exampleShader.setUniform("palette_Value", palette_Value);
