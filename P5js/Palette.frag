@@ -61,7 +61,7 @@ void main(){
     
     if(i > palette_Size){break;}
     
-    vec3 new_Col = texture2D(palette_Img, vec2(palette_Offset * (i + 1.) , 1.)).rgb;
+    vec3 new_Col = texture2D(palette_Img, vec2(palette_Offset * i , 1.)).rgb;
     
     prev_Col = closest_Colour(target_Col, prev_Col, new_Col);
   }
