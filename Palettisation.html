@@ -93,7 +93,7 @@
   <img src="Images/Code_ColourVariables_2.PNG" alt="A block of code that repeats the above sampling code eight times.">
   <p>This is really mesy without a loop... And we get a black screen. I checked to see if the colours are being correctly identified, and they are, but, of course, the colour definitions are now in the 0-1 range, instead of the more human-readable 0-255 I had before.</p>
   <br>
-  <img src="Images/Betta_Palettised_2.png" alt="The betta fish photo, palettised in much brighter blue and red.">
+  <img style="height: 50vmin;" src="Images/Betta_Palettised_2.png" alt="The betta fish photo, palettised in much brighter blue and red.">
   <p>And here we have it. Cool right? And now all the logic is in the main() function, I can parameterise the palette size and make any arbitrary sized palette. With a real loop! Loops do have their performance issues in shaders, but it’ll only loop as many times as there are colours in the palette, which shouldn’t be too much anyway. More than 16 and you might as well be doing normal posterisation and colour correction.</p>
   <br>
   <img src="Images/Code_LoopError.PNG" alt="An error message saying "Loop index cannot be compared to non-constant expression">
