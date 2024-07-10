@@ -83,6 +83,29 @@
   <p>There were a few typos and the like, but now everything's live on the site! My favourite configuration is still hue and saturation but no value, but see what you think! There are a few image artifacts that appear in certain settings, the brightness is a bit low when the Value is palettised, and I'd like to let the user select a palette, but not today.</p>
  </section>
 
+ <section class="code-style">
+  <h2>Palette images</h2>
+  <p>Right. Image palette time. I grabbed <a href="https://lospec.com/palette-list/pollen8">this pollen palette</a> by Conker from lospec, and got to work. Assuming we’ll be using a fixed size of 8 colours for now, we can get an offset value of 1/8 to find each colour in the image, and ‘iterate’ through them to set the colours. </p>
+  <img src="Images/Code_PaletteSample.PNG" alt="A section of code that samples a texture that uses a variable called palette offset to find the location to sample from">
+  <br>
+  <p>Unfortunately, we're defining the colours as constants right now, but if we want to change the active palette, I don’t think we can make it a constant. We’re not exactly changing it every frame either, but I don’t know if there’s a better way to do it than just moving the colour definitions into main(). </p>
+  <br>
+  <img src="Images/Code_ColourVariables_2.PNG" alt="A block of code that repeats the above sampling code eight times.">
+  <p>This is really mesy without a loop... And we get a black screen. I checked to see if the colours are being correctly identified, and they are, but, of course, the colour definitions are now in the 0-1 range, instead of the more human-readable 0-255 I had before.</p>
+  <br>
+  <img src="Images/Betta_Palettised_2.png" alt="The betta fish photo, palettised in much brighter blue and red.">
+  <p>And here we have it. Cool right? And now all the logic is in the main() function, I can parameterise the palette size and make any arbitrary sized palette. With a real loop! Loops do have their performance issues in shaders, but it’ll only loop as many times as there are colours in the palette, which shouldn’t be too much anyway. More than 16 and you might as well be doing normal posterisation and colour correction.</p>
+  <br>
+  <img src="Images/Code_LoopError.PNG" alt="An error message saying "Loop index cannot be compared to non-constant expression">
+  <p>But of course, loops need to have their length defined at compile time, which doesn't agree with the idea that the user would define the palette size.</p>
+  <br>
+  <p>But, I'm pretty sure the loop's <em>maximum</em> length that needs to be defined. Why don't we do something dumb?</p>
+  <br>
+  <img src="Images/Code_DumbLoop.PNG" alt = "A section of code including a loop that repeats twenty times. The first line inside the loop is set to break the loop if the loop has repeated more times than the palette size.">
+  <p>I really ought to get this into a real profiler so I know exactly how much of an impact it’s having. For now, look at this cleanly readable code!</p>
+  <br>
+  <p>The arbitrary palettes give a slightly different result than hardcoded ones, which I think might be down to image compression? It’s not losing any colours, just shifting them around slightly. Something to investigate when I implement this in a full game engine maybe. </p>
+ </section>
 
 
 </body>
