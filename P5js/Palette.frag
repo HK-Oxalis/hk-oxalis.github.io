@@ -21,18 +21,16 @@ vec3 hsv2rgb(vec3 c)
 varying vec2 pos;
 
 uniform sampler2D background;
+uniform sampler2D palette_Img;
+uniform float palette_Size;
 uniform bool palette_Hue;
 uniform bool palette_Saturation;
 uniform bool palette_Value;
 
-vec3 colour1 = vec3(68, 104, 68);
-vec3 colour2 = vec3(35, 51, 35);
-vec3 colour3 = vec3(129, 105, 85);
-vec3 colour4 = vec3(86, 61, 41);
-vec3 colour5 = vec3(104, 64, 88);
-vec3 colour6 = vec3(69, 33, 54);
-vec3 colour7 = vec3(86, 41, 41);
-vec3 colour8 = vec3(64, 43, 43);
+
+
+
+
 
 vec3 closest_Colour(vec3 target_Col, vec3 prev_Col, vec3 new_Col)
 {
@@ -52,19 +50,24 @@ void main(){
   newPos.y = 1. - newPos.y;
   
   vec4 sample_Col = texture2D(background, newPos);
-  vec3 target_Col = sample_Col.rgb * 255.;
-    
-  vec3 prev_Col = closest_Colour(target_Col, colour1, colour2);
+  vec3 target_Col = sample_Col.rgb;
   
-  prev_Col = closest_Colour(target_Col, prev_Col, colour3);
-  prev_Col = closest_Colour(target_Col, prev_Col, colour4);
-  prev_Col = closest_Colour(target_Col, prev_Col, colour5);
-  prev_Col = closest_Colour(target_Col, prev_Col, colour6);
-  prev_Col = closest_Colour(target_Col, prev_Col, colour7);
-  prev_Col = closest_Colour(target_Col, prev_Col, colour8);
+  float palette_Offset = 1. / palette_Size;
+  
+  vec3 prev_Col = texture2D(palette_Img, vec2(0,0)).rgb;
+  
+  
+  for (float i = 0.; i < 20.; i++){
+    
+    if(i > palette_Size){break;}
+    
+    vec3 new_Col = texture2D(palette_Img, vec2(palette_Offset * (i + 1.) , 1.)).rgb;
+    
+    prev_Col = closest_Colour(target_Col, prev_Col, new_Col);
+  }
 
-  target_Col = target_Col/255.;
-  vec3 hsv_Col = rgb2hsv(prev_Col / 255.);
+  target_Col = target_Col;
+  vec3 hsv_Col = rgb2hsv(prev_Col);
   vec3 hsv_Sample = rgb2hsv(target_Col);
   
   vec3 final_Col = hsv_Sample;
@@ -77,4 +80,5 @@ void main(){
   
   gl_FragColor = vec4((final_Col), 1);
 }
+
 
