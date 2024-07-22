@@ -83,6 +83,10 @@ img {
   flex: 50%;
 }
 
+.date{
+  color: gray;
+}
+
 .doll-style{
   border: 7px solid var(--deep-purple);
   border-radius: 12px;
