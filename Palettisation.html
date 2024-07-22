@@ -50,7 +50,11 @@
    <br>
    <p>The problem is, if you want to use it for a different mood, you need more control of what colours appear. You need control of the <i>palette</i>. Palettes aren’t that relevant in most art, but pixel art historically sticks very closely to limited palettes, and pixel art specific programs like Aseprite do it automatically. </p>
    <br>
-   <p>I’ve spent some time working on pixel art shaders, and the typical ‘cheat’ way to use palettes is to just greyscale the image and have your palette in exact brightness order, but that’s not useful if you want multiple different colours and it doesn’t take an arbitrary palette well. That’s what I want to fix here.</p>
+   <p>I’ve spent some time working on pixel art shaders, and the typical ‘cheat’ way to use palettes is to just greyscale the image and have your palette in exact brightness order, but that doesn’t allow enough direct control to be useful in most games.</p>
+   <img src="Images/Shader_Palette_Windows.png" alt="Two sets of pixel art windows side by side. The top row has yellow flowers in it and the bottom row has blue flowers.The left side are in their original colours and the right are in a desaturated palette, but the flowers stand out as yellow and blue either way. ">
+   <p>Take these two windows with different coloured flowers. Mathematically, the flowers are very similar colours, with very close saturation and brightness levels, so the only way to tell them apart is their hue, which is thrown away if you use a greyscale method. </p>
+   <br>
+   <p>Now, what if they were your health and stamina bar? Or variations of elemental enemies? Or a normal versus critical hit? Colour information is very important for player communication, but standard palettisation techniques almost always lose it. That’s what I want to fix here.</p>
   </section>
  <section class="code-style">
   <h2>Execution</h2>
@@ -107,6 +111,19 @@
   <p>The arbitrary palettes give a slightly different result than hardcoded ones, which I think might be down to image compression? It’s not losing any colours, just shifting them around slightly. Something to investigate when I implement this in a full game engine maybe. </p>
  </section>
 
+ <section class="code-style">
+  <h2>Godot and Performance</h2>
+  <p class="date">22/07/2024</p>
+  <br>
+  <p>Thankfully, Godot has very helpful <a href="https://docs.godotengine.org/en/stable/tutorials/shaders/converting_glsl_to_godot_shaders.html#doc-converting-glsl-to-godot-shaders">docs</a> for shader reference, so I've got my shaders up in a 3d scene quickly.  </p>
+  <img src="Images/Shader_Palette_3d_Scene.png" alt="A screenshot of a 3d scene in a hallway flanked by arnches. There's two cubes sunk into the ground, a small one that looks green and one that's a lot lighter in shade. It's all palettised to the greens and purples I use in this website.">
+  <br>
+  <p>Now, let's look at the profiler and see how we're doing. It looks like we’re at about 3.47ms for the entire rendering frame time and the pass I think the shader is running on is 0.44ms on the gpu. Changing the size of the palette within the 20-colour limit seems not to have an impact, which makes sense from what I know of how shaders process loops. </p>
+  <br>
+  <p>My first try at optimisation comes from <a href="https://stackoverflow.com/questions/12469990/simple-glsl-convolution-shader-is-atrociously-slow">this</a> stackoverflow answer. It’s not exactly the same situation, but by reading the palette texture in the vertex shader, I think I can save time wasted reading the texture for each pixel. </p>
+  <br>
+  <p>I think I’ve knocked the frame time down to about 0.36ms, so that’s some improvement. I’m not quite sure what I’m doing with the profiler, but that sounds good, so I’ll leave it there for now.</p>
+ </section>
 
 </body>
 </html>
