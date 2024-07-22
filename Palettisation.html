@@ -85,7 +85,7 @@
 
  <section class="code-style">
   <h2>Palette images</h2>
-  <p>Right. Image palette time. I grabbed <a href="https://lospec.com/palette-list/pollen8">this pollen palette</a> by Conker from lospec, and got to work. Assuming we’ll be using a fixed size of 8 colours for now, we can get an offset value of 1/8 to find each colour in the image, and ‘iterate’ through them to set the colours. </p>
+  <p>Right. Image palette time. I grabbed <a href="https://lospec.com/palette-list/pollen8">this palette</a> by Conker from lospec, and got to work. Assuming we’ll be using a fixed size of 8 colours for now, we can get an offset value of 1/8 to find each colour in the image, and ‘iterate’ through them to set the colours. </p>
   <img src="Images/Code_PaletteSample.PNG" alt="A section of code that samples a texture that uses a variable called palette offset to find the location to sample from">
   <br>
   <p>Unfortunately, we're defining the colours as constants right now, but if we want to change the active palette, I don’t think we can make it a constant. We’re not exactly changing it every frame either, but I don’t know if there’s a better way to do it than just moving the colour definitions into main(). </p>
