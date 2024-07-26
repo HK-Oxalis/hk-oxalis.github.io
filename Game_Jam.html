@@ -14,10 +14,29 @@
   </header>
    
  <section class="code-style">
- </section>
+    <p>The Game Maker's Toolkit game jam is a consistently record-breaking annual game jam that happens in the summer. I want to join this year's, starting on August 16th and lasting four days. I've had a couple of sucessful game jams before, but never really settled on a tool long enough to start making myself generic libraries for it. This time, I want to practice my godot skills by making a few tools and templates, for use in this and future game jams.</p>
+   </section>
+ 
+ <section class="code-style">
   <h2>Control Remapping</h2>
   <p class="date">26/07/24</p>
-  <p>I’m very proud of this little bit of utility work I did on this control remapping code. I plan to use this template for game jams, so I thought I’d save myself a bit of time by programmatically populating the controls menu with all the controls defined in the input map. </p>
+  <p>I’m very proud of this little bit of utility work I did on this control remapping code. Given the short timeframes in a game jam, I thought I’d save myself a bit of time by programmatically populating the controls menu with all the controls defined in the input map. </p>
+ <br>
+ <img src="Images/Code_Controls_Intantiate.png" alt="A section of code that loops through the entires in a list of actions, skipping the first 76 entries and creating a button for each of the rest.">
+ <p>The instantiating is pretty simple, although I do have to skip over the 76 Ui controls. The really tricky bit is locating the button’s name from the event object. </p>
+ <br>
+ <p style="background-color: white">[InputEventKey: keycode=32 (Space), mods=none, physical=true, pressed=false, echo=false]</p>
+ <br>
+ <p>Keyboard buttons look like this as strings, and they have their names between two brackets, so we can locate them that way, but what about controllers?</p>
+ <br>
+ <p style="background-color: white">[InputEventJoypadButton: button_index=9, pressed=true, pressure=0.00]</p>
+ <br>
+ <p>No brackets here, so the keyboard code throws an error. I can check for the string ‘Joypad’, which I think is generic across controllers? I’d love to just check the number after it, but there’s a chance of a double-digit number here, so I’ll have to do it the long way.</p>
+ <br>
+ <p>The next step is to differentiate between axes and buttons, which I did with an if statement, although I’ll probably have to come back to this after implementing a simple movement system and experiment.</p>
+ <br>
+ <img src="Images/Code_Controls_Name.png" alt="A section of commented code that acts as described above.">
+  </section>
   
 </body>
 </html>
