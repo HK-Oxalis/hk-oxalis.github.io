@@ -33,9 +33,12 @@
  <br>
  <p>No brackets here, so the keyboard code throws an error. I can check for the string ‘Joypad’, which I think is generic across controllers? I’d love to just check the number after it, but there’s a chance of a double-digit number here, so I’ll have to do it the long way.</p>
  <br>
- <p>The next step is to differentiate between axes and buttons, which I did with an if statement, although I’ll probably have to come back to this after implementing a simple movement system and experiment.</p>
+ <p>Now, this is looking great, but it seems to think all the buttons are called space right now. I think this is because the instantiate button and update label code are both in _ready, which causes them to run in the wrong order. A constructor wouldn’t work, because it would run when the scene is created, and there’s some steps between that and getting the button itself. Godot does provide an early initialisation called _Init, but I don’t know if that applies to UI elements.</p>
  <br>
+  <p>Instead, I’ll replace _ready with my own constructor and call in manually from the control list.</p>
  <img src="Images/Code_Controls_Name.png" alt="A section of commented code that acts as described above.">
+  <br>
+  <p>And there we go! Of course, reading directly from the editor like this means I'll have to be careful and not confuse players by leaving redundant controls in the settings, but hopefully it'll be useful.</p>
   </section>
   
 </body>
