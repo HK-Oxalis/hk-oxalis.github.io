@@ -115,7 +115,7 @@
   <h2>Godot and Performance</h2>
   <p class="date">22/07/2024</p>
   <p>Thankfully, Godot has very helpful <a href="https://docs.godotengine.org/en/stable/tutorials/shaders/converting_glsl_to_godot_shaders.html#doc-converting-glsl-to-godot-shaders">docs</a> for shader reference, so I've got my shaders up in a 3d scene quickly.  </p>
-  <img src="Images/Shader_Palette_3d_Scene.png" alt="A screenshot of a 3d scene in a hallway flanked by arnches. There's two cubes sunk into the ground, a small one that looks green and one that's a lot lighter in shade. It's all palettised to the greens and purples I use in this website.">
+  <img src="Images/Shader_Palette_3d_Scene.png" alt="A screenshot of a 3d scene in a hallway flanked by arches. There's two cubes sunk into the ground, a small one that looks green and one that's a lot lighter in shade. It's all palettised to the greens and purples I use in this website.">
   <br>
   <p>Now, let's look at the profiler and see how we're doing. It looks like we’re at about 3.47ms for the entire rendering frame time and the pass I think the shader is running on is 0.44ms on the gpu. Changing the size of the palette within the 20-colour limit seems not to have an impact, which makes sense from what I know of how shaders process loops. </p>
   <br>
