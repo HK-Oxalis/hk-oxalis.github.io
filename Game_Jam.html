@@ -3,23 +3,26 @@
 <head>
   <link rel="stylesheet" type="text/css" href="style.css">
  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.js"></script>
-  <title>GMTK 2024 Log</title>
+  <title>Game Jam Setup</title>
 </head>
 <body>
   <header>
     <h1>
-      The GMTK Game Jam 2024
+      My Game Jam Templates
     </h1>
     
   </header>
    
  <section class="code-style">
-    <p>The Game Maker's Toolkit game jam is a consistently record-breaking annual game jam that happens in the summer. I want to join this year's, starting on August 16th and lasting four days. I've had a couple of sucessful game jams before, but never really settled on a tool long enough to start making myself generic libraries for it. This time, I want to practice my <b>Godot</b> skills by making a few tools and templates, for use in this and future game jams.</p>
+    <p>Game Jams are a game making challenge where people are tasked to create a game, usually following a theme or restriction, in a limited time. Most allow some degree of default code or templates, which make experienced developers stand out in the judging. I want to practice my <b>Godot</b> skills by making a few tools and templates, for use in future game jams.</p>
    </section>
  
  <section class="code-style">
   <h2>Control Remapping</h2>
   <p class="date">26/07/24</p>
+  <br>
+  <p>Acessibility is an important part of game creation, but it often gets put aside in the limited context of a game jam, so a settings menu with control remapping and space for more specific options will make that easier.</p>
+  <br>
   <p>I’m very proud of this little bit of utility work I did on this control remapping code. Given the short timeframes in a game jam, I thought I’d save myself a bit of time by programmatically populating the controls menu with all the controls defined in the input map. </p>
  <br>
  <img src="Images/Code_Controls_Intantiate.png" alt="A section of code that loops through the entires in a list of actions, skipping the first 76 entries and creating a button for each of the rest.">
