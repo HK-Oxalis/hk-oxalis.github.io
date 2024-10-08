@@ -20,14 +20,21 @@
    </section>
 
   <section class="code-style">
-    <h2>Code Walkthrough</h2>
+    <h2>Basic Implementation</h2>
+    <br>
+    <video title="A video showing a 2d maze being downloaded, then a Python terminal building a Usd file at a specified location, then a 3d model of the first maze in the program Blender, then 3d rendered images of a large, high-density maze." class="img-bordered" autoplay muted>
+      <source src="Images/Showreel_3d_Maze.mp4" type="video/mp4">
+      A video showing a 2d maze being downloaded, then a Python terminal building a Usd file at a specified location, then a 3d model of the first maze in the program Blender, then 3d rendered images of a large, high-density maze.
+    </video>
     <p>The maze generator is in javascript and it’s producing a Json file that looks like <div class="code-snippet">{"0,0":{"x":0,"y":0,"links":[[1,0]]}, "1,0":{"x":1,"y":0,"links":[[0,0],[2,0]]}</div> Each object saves an X and Y grid location and then the X and Y of their linked cells. </p>
     <br>
     <p>There’s some extra data, because I’m saving the cell’s coordinates as both the dictionary key and in the x and y values, but that’s mostly just for readability. I throw the keys away immediately, because I only need the values.</p>
     <br>
+    <img class="img-bordered" src="Images/Code_Maze_CellLocation.png" alt="A section of code, that is the start of a for loop. The code finds the location of a cell based on its x and y positions and creates a transform object at that location."> 
     <p>We then take that list of cells and, iterating through them, we find the corner locations, and use them plus half a cell to find the centre location, which I place a parent transform at.</p>
     <br>
-    <p>Then, we test if the coordinates for a neighbour cell are in the linked cells list, if they aren’t, we would like to place a wall. We only make the north or west walls if we're at the edge of the maze, to avoid duplicate geometry.</p>
+    <img class="img-bordered" src="Images/Code_Maze_WallLocation.png" alt="A section of code that finds the south and east coordinate neighbours and creates a wall if they are not found in the cell's links array">
+    <p>Then, we test if the coordinates for a neighbour cell are in the linked cells list, if they aren’t, we would like to place a wall. We only make the north or west walls if we're at the edge of the maze (as in, the x or y positions are 0), to avoid duplicate geometry.</p>
     <br>
     <p>When I first tried to do this, I got far too many walls and a strange diagonal line through the middle. Using some print statements, I was able to find out that only connections with symmetrical coordinates ([0, 0], [1, 1], [5, 5]) were being correctly processed, and it was because I got X and Y mixed up earlier in the code. </p>
     <br>
