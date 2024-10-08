@@ -27,7 +27,7 @@
       A video showing a 2d maze being downloaded, then a Python terminal building a Usd file at a specified location, then a 3d model of the first maze in the program Blender, then 3d rendered images of a large, high-density maze.
     </video>
   <section class="code-style">
-    <p>The maze generator is in javascript and it’s producing a Json file that looks like <div class="code-snippet">{"0,0":{"x":0,"y":0,"links":[[1,0]]}, "1,0":{"x":1,"y":0,"links":[[0,0],[2,0]]}</div> Each object saves an X and Y grid location and then the X and Y of their linked cells. </p>
+    <p>The maze generator is in javascript and it’s producing a Json file that looks like this: <div class="code-snippet">{"0,0":{"x":0,"y":0,"links":[[1,0]]}, "1,0":{"x":1,"y":0,"links":[[0,0],[2,0]]}</div> Each object saves an X and Y grid location and then the X and Y of their linked cells. </p>
     <br>
     <p>There’s some extra data, because I’m saving the cell’s coordinates as both the dictionary key and in the x and y values, but that’s mostly just for readability. I throw the keys away immediately, because I only need the values.</p>
   </section>
