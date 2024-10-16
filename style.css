@@ -101,7 +101,7 @@ img {
 
 .doll-style{
   border: 7px solid var(--deep-purple);
-  border-radius: 12px;
+  border-radius: 1%;
   margin: 3%;
   padding: 2%;
   background-color: var(--dull-purple);
@@ -117,7 +117,7 @@ img {
 }
 .code-style{
   border: 7px solid var(--deep-green);
-  border-radius: 12px;
+  border-radius: 1%;
   margin: 3%;
   padding: 2%;
   background-color: var(--dull-green);
