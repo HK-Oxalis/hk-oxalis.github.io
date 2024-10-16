@@ -51,10 +51,6 @@ footer ul {
   list-style-type: none;
   margin: auto;
   padding: 2%;
-
-  border: 7px solid var(--deep-green);
-  border-radius: 2%;
-  background-color: var(--pale-green);
 }
 footer li {
   display: inline;
