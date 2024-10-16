@@ -55,6 +55,11 @@ footer ul {
 footer li {
   display: inline;
 }
+
+footer iframe{
+  border: none;
+}
+
 img {
   max-width: 100%;
   height: auto;
