@@ -49,7 +49,7 @@ checkbox {
 
 footer ul {
   list-style-type: none;
-  margin: 0;
+  margin: auto;
   padding: 2%;
 
   border: 7px solid var(--deep-green);
