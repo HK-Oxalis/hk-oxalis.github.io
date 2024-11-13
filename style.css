@@ -105,12 +105,9 @@ img {
   border-radius: 1%;
   margin: 3%;
   padding: 2%;
-  background-color: var(--dull-purple);
-}
-
-.doll-style p{
   background-color: var(--pale-purple);
 }
+
 
 #doll-section{
   border-color: var(--deep-purple);
@@ -121,12 +118,8 @@ img {
   border-radius: 1%;
   margin: 3%;
   padding: 2%;
-  background-color: var(--dull-green);
-  
-}
-
-.code-style p{
   background-color: var(--pale-green);
+  
 }
 
 .code-snippet {
