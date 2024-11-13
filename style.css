@@ -16,7 +16,7 @@ html, body {
 p {
   margin: auto;
   background-color: var(--pale-green);
-  font-size: 5vmin;
+  font-size: 3vmin;
 }
 
 
@@ -45,6 +45,13 @@ button{
 
 checkbox {
   scale: 6vmin;
+}
+
+iframe{
+  border:none;
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 
 footer ul {
@@ -105,9 +112,12 @@ img {
   border-radius: 1%;
   margin: 3%;
   padding: 2%;
-  background-color: var(--pale-purple);
+  background-color: var(--dull-purple);
 }
 
+.doll-style p{
+  background-color: var(--pale-purple);
+}
 
 #doll-section{
   border-color: var(--deep-purple);
@@ -120,6 +130,10 @@ img {
   padding: 2%;
   background-color: var(--pale-green);
   
+}
+
+.code-style p{
+  background-color: var(--pale-green);
 }
 
 .code-snippet {
