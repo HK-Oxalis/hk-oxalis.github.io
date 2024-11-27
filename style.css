@@ -110,7 +110,7 @@ img {
 .doll-style{
   border: 7px solid var(--deep-purple);
   border-radius: 1%;
-  margin: 3%;
+  margin: 1vmin;
   padding: 2%;
   background-color: var(--dull-purple);
 }
@@ -126,7 +126,7 @@ img {
 .code-style{
   border: 7px solid var(--deep-green);
   border-radius: 1%;
-  margin: 3%;
+  margin: 1vmin;
   padding: 2%;
   background-color: var(--pale-green);
   
