@@ -3,6 +3,11 @@
 <head>
   <link rel="stylesheet" type="text/css" href="style.css">
   <title>Game Jams</title>
+  <script>
+  function resizeIframe(obj) {
+    obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+  }
+</script>
 </head>
 <body>
   <header>
@@ -13,10 +18,11 @@
   </header>
   <section class="code-style">
     <p>Here's a list of my succesful game jam games, with little breakdowns of how I feel about them after the fact.</p>
-    <iframe src="https://hk-oxalis.github.io/Articles/Go_Up.html">
+    <iframe src="https://hk-oxalis.github.io/Articles/Go_Up.html" scrolling="no"  onload="resizeIframe(this)"></iframe>
+      
   </section>
     
-  </iframe>
+  
   
   <footer>
     <ul>
