@@ -1,15 +1,14 @@
 
 :root{
-  --background-green: #1c1f1c;
   --deep-green: #214521;
   --deep-purple: #452136;
   --dull-green: #354635;
   --dull-purple: #46353f;
-  --pale-green: #384d38;
-  --pale-purple: #684458;
+  --pale-green: #d8ffad;
+  --pale-purple: #b4a7d6;
 }
 html, body {
-  background-color: var(--background-green);
+  background-color: var(--dull-green);
   font-size: 5vmin;
   text-align: center;
 }
@@ -74,7 +73,9 @@ footer iframe{
 
 .nav li{
   display: inline;
-  margin: 2%;
+  margin: auto;
+  padding: 2%;
+  white-space: nowrap;
   font-size: 5vmin;
 }
 
@@ -137,7 +138,7 @@ img {
 }
 .code-style{
   border: 7px solid var(--deep-green);
-  border-radius: 1%;
+  border-radius: 5%;
   margin: 2vmin;
   padding: 2%;
   background-color: var(--pale-green);
@@ -153,6 +154,10 @@ img {
   color: var(--deep-green);
   border-width: 0;
   height: 1vmin;
+}
+
+.code-style a{
+  color: var(--deep-green)
 }
 
 .code-snippet {
