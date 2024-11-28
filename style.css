@@ -76,7 +76,7 @@ footer iframe{
   margin: auto;
   padding: 2%;
   white-space: nowrap;
-  font-size: 5vmin;
+  font-size: 20vmin;
 }
 
 
@@ -122,7 +122,7 @@ img {
 
 .doll-style{
   border: 7px solid var(--deep-purple);
-  border-radius: 1%;
+  border-radius: 5%;
   margin: 3%;
   padding: 2%;
   background-color: var(--pale-purple);
