@@ -125,11 +125,15 @@ img {
   border-radius: 1%;
   margin: 3%;
   padding: 2%;
-  background-color: var(--dull-purple);
+  background-color: var(--pale-purple);
 }
 
 .doll-style p{
   background-color: var(--pale-purple);
+}
+
+.doll-style a{
+  color: var(--deep-purple)
 }
 
 #doll-section{
