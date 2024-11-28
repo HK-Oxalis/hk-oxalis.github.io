@@ -2,8 +2,12 @@
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="P5js/p5.js"></script>
     <script src="slideshow.js" defer></script>
+    <script>
+  function resizeIframe(obj) {
+    obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+  }
+    </script>
     <title>My Portfolio site</title>
     <base href="https://hk-oxalis.github.io/">
   </head>
@@ -12,6 +16,8 @@
       <header>
         <h1>Portfolio</h1>
         <p>I do creative coding, 3d modelling and dollmaking!</p>
+        <br>
+        <iframe src="Nav_Bar.html"  onload="resizeIframe(this)"></iframe>
       </header>
       
       <section class="code-style">
