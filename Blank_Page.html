@@ -3,19 +3,21 @@
 <head>
   <link rel="stylesheet" type="text/css" href="style.css">
   <title>Blank Page</title>
+  <script>
+  function resizeIframe(obj) {
+    obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+  }
+    </script>
 </head>
 <body>
   <header>
     <h1>
       Put header here
     </h1>
+
+    <iframe src="Nav_Bar.html"  onload="resizeIframe(this)"></iframe>
     
   </header>
-  <footer>
-    <ul>
-      <li> <a href="index.html">Home</a></li>
-    </ul>
-  </footer>
 </body>
 </html>
    
