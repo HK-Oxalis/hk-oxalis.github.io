@@ -54,6 +54,26 @@
     <p>
       This is pretty simple for the ring surface, I’m just alternating between the inner and outer rings and connecting neighbours. There’s a bit of an edge case when we reach the last vert where we need to wrap back around to 0, but we can solve that with a modulus. 
     </p>
+    <br>
+    <p>At this point we’ve got a series of concentric planes that match the given outline and other settings. The side faces are very similar, although I do have to split them into two for the sake of the normals.
+</p>
+    <br>
+    <p>
+      The normal values are automatically generated, but they assume that the face’s points were wound clockwise, facing the front. Any error can also be easily fixed in most 3D editing software, and it’s not strictly relevant for a 3D printable volume, except that the slicer will use them to figure out how to handle intersections, which caused a few problems with the stringing loops. 
+    </p>
+    <br>
+    <p>
+      Those loops being hollow cylinders which I make very similarly to the main rings, although I reposition them using this code to place them relative to the highest and lowest central points on the outline. It’s not super reliable with asymmetric shapes, and needs a bit of manual tweaking sometimes, but it works well enough for most cases. 
+    </p>
+  </section>
+
+  <section class="code-style">
+    <h2>Conclusion</h2>
+    <p>
+      The biggest problem I still have is that it doesn’t handle fuzzy edges well, such as those created by anti-aliasing, and it can’t handle stray pixels in the source image either. I have to create solid black-and-white images using a specific brush in my digital art software, and I wonder if a different artist would be able to identify potential issues and avoid them in their own art. </p>
+    <br>
+    <p>Image problems are pretty obvious when you look at the model, but chasing the source down isn’t always intuitive, and I’d rather be more error-tolerant from the outset. 
+    </p>
   </section>
 </body>
 </html>
