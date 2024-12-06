@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <base href="https://hk-oxalis.github.io/">
+  <title>Spinning Ornaments</title>
+  <script>
+  function resizeIframe(obj) {
+    obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+  }
+    </script>
+  
+</head>
+<body>
+  <header class="code-style">
+    <h1>
+      Programatically Generating Spinning Ornaments
+    </h1>
+
+    <iframe src="Nav_Bar.html"  onload="resizeIframe(this)"></iframe>
+    
+  </header>
+
+  <section class="code-style">
+    <h2>My Goal</h2>
+    <p>In the autumn, I was walking through a market with my dad and I saw this lovely stall. The optical illusion they create is stunning, and I decided I’d try to write code to recreate them. </p>
+    <br>
+    <p>My goal was to create code that would read a monochrome outline image and then create a set of fully 3D printable concentric rings, which I could then send to a printer without much post-processing.</p>
+    <br>
+    <p>Currently, the code does just that, using only USD, the Pillow library to handle the image processing and numpy for some operations. 
+</p>
+  </section>
+
+  <section class="code-style">
+    <h2>Code Breakdown</h2>
+    <p>The code starts with the function to create the outline, which I read from an image using the Pillow library. To account for both greyscale and full-colour images, I calculate my threshold using the data PIL supplies me. I’m currently just halving the maximum colour, which could create problems for very light images, but black is the preferred input colour anyway for other reasons. </p>
+    <br>
+    <p>
+      I had thought to use a typical outline shader-style convolution filter, but I found that the brute force approach worked better and was easier to debug, considering that this is running on the CPU. Here I’m just checking the immediate neighbours to see if they’re crossing the colour threshold I found above.
+    </p>
+    <br>
+    <p>
+      If we’re creating a debug image, I can mark the point directly, and otherwise I can map the point to normalised 3D coordinates.
+    </p>
+    <br>
+    <p>
+      It’s important that they’re normalised, so when I go through creating the rings I can just multiply their locations by a given radius. The expand value here is to create spacing between rings, so they remain separate in the print and also so they have clearance to spin. The offset value is for the second set of vertices that give the model depth, again so that the model is physically viable without any editing.
+    </p>
+    <br>
+    <p>
+      Once I have the vertices, I have to create the faces to attach them. We do this by creating a list of which points belong to which face, and then a list of how many points each face has. I’m only using quads for this, so that second list is just a bunch of fours and I can be sure any four indices added together will be connected.
+    </p>
+    <br>
+    <p>
+      This is pretty simple for the ring surface, I’m just alternating between the inner and outer rings and connecting neighbours. There’s a bit of an edge case when we reach the last vert where we need to wrap back around to 0, but we can solve that with a modulus. 
+    </p>
+  </section>
+</body>
+</html>
