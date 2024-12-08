@@ -24,44 +24,44 @@
   <section class="code-style">
     <h2>My Goal</h2>
     <p>In the autumn, I was walking through a market with my dad and I saw this lovely stall. The optical illusion they create is stunning, and I decided I’d try to write code to recreate them. </p>
-    <br>
+    <video title="A video of a narrow but tall stand which has several shiny spinning ornaments hanging from it. The ornaments are made of concentric rings, which create an optical illusion as they reflect the light.">
+      <source src="Images\Spinners\Market_Spinners.mp4" type="video/mp4">
+    </video>
     <p>My goal was to create code that would read a monochrome outline image and then create a set of fully 3D printable concentric rings, which I could then send to a printer without much post-processing.</p>
-    <br>
     <p>Currently, the code does just that, using only USD, the Pillow library to handle the image processing and numpy for some operations. 
 </p>
   </section>
 
   <section class="code-style">
     <h2>Code Breakdown</h2>
+    <img src="Images\Spinners\Code_Spinners_Outline.png" alt="A screenshot of colour-coded code">
     <p>The code starts with the function to create the outline, which I read from an image using the Pillow library. To account for both greyscale and full-colour images, I calculate my threshold using the data PIL supplies me. I’m currently just halving the maximum colour, which could create problems for very light images, but black is the preferred input colour anyway for other reasons. </p>
-    <br>
+    <img src="Images\Spinners\Code_Spinners_Edge.png" alt="A screenshot of colour-coded code">
     <p>
-      I had thought to use a typical outline shader-style convolution filter, but I found that the brute force approach worked better and was easier to debug, considering that this is running on the CPU. Here I’m just checking the immediate neighbours to see if they’re crossing the colour threshold I found above.
+      I had thought to use a typical outline shader-style convolution filter to find my edges, but I found that the brute force approach worked better and was easier to debug, considering that this is running on the CPU. Here I’m just checking the immediate neighbours to see if they’re crossing the colour threshold I found above.
     </p>
-    <br>
     <p>
       If we’re creating a debug image, I can mark the point directly, and otherwise I can map the point to normalised 3D coordinates.
     </p>
-    <br>
+    <img src="Images\Spinners\Code_Spinners_Verts.png" alt="A screenshot of colour-coded code">
     <p>
       It’s important that they’re normalised, so when I go through creating the rings I can just multiply their locations by a given radius. The expand value here is to create spacing between rings, so they remain separate in the print and also so they have clearance to spin. The offset value is for the second set of vertices that give the model depth, again so that the model is physically viable without any editing.
     </p>
-    <br>
+    <img src="Images\Spinners\Code_Spinners_QuadIndices.png" alt="A screenshot of colour-coded code">
     <p>
       Once I have the vertices, I have to create the faces to attach them. We do this by creating a list of which points belong to which face, and then a list of how many points each face has. I’m only using quads for this, so that second list is just a bunch of fours and I can be sure any four indices added together will be connected.
     </p>
-    <br>
     <p>
       This is pretty simple for the ring surface, I’m just alternating between the inner and outer rings and connecting neighbours. There’s a bit of an edge case when we reach the last vert where we need to wrap back around to 0, but we can solve that with a modulus. 
     </p>
-    <br>
+    <img src="Images\Spinners\Code_Spinners_Vert_Diagram.png" alt="A black and white diagram of numbered points on two lines,with arrows that show which points will be connected">
     <p>At this point we’ve got a series of concentric planes that match the given outline and other settings. The side faces are very similar, although I do have to split them into two for the sake of the normals.
-</p>
-    <br>
+    </p>
+    <img src="Images\Spinners\Code_Spinners_SideIndices.png" alt="A screenshot of colour-coded code">
     <p>
       The normal values are automatically generated, but they assume that the face’s points were wound clockwise, facing the front. Any error can also be easily fixed in most 3D editing software, and it’s not strictly relevant for a 3D printable volume, except that the slicer will use them to figure out how to handle intersections, which caused a few problems with the stringing loops. 
     </p>
-    <br>
+    <img src="Images\Spinners\Code_Spinners_Stringers.png" alt="A screenshot of colour-coded code">
     <p>
       Those loops being hollow cylinders which I make very similarly to the main rings, although I reposition them using this code to place them relative to the highest and lowest central points on the outline. It’s not super reliable with asymmetric shapes, and needs a bit of manual tweaking sometimes, but it works well enough for most cases. 
     </p>
@@ -72,7 +72,7 @@
     <p>
       The biggest problem I still have is that it doesn’t handle fuzzy edges well, such as those created by anti-aliasing, and it can’t handle stray pixels in the source image either. I have to create solid black-and-white images using a specific brush in my digital art software, and I wonder if a different artist would be able to identify potential issues and avoid them in their own art. </p>
     <br>
-    <p>Image problems are pretty obvious when you look at the model, but chasing the source down isn’t always intuitive, and I’d rather be more error-tolerant from the outset. 
+    <p>Image problems are pretty obvious when you look at the model, but chasing the source down isn’t always intuitive, and I’d rather be more error-tolerant from the outset.  I’d also like to clean up the code to sort out my constants and parameters, to make configuration a bit easier.
     </p>
   </section>
 </body>
