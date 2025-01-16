@@ -4,13 +4,20 @@
   <link rel="stylesheet" type="text/css" href="style.css">
  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.js"></script>
   <title>Open Usd Mazes</title>
+  <link rel="icon" type="image/x-icon" href="Images/Site/Sorrel_Icon.png">
+  <base href="https://hk-oxalis.github.io/">
+  <script>
+  function resizeIframe(obj) {
+    obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+  }
+    </script>
 </head>
 <body>
   <header>
     <h1>
       A-Mazing OpenUsd
     </h1>
-    
+    <iframe src="Nav_Bar.html"  onload="resizeIframe(this)"></iframe>
   </header>
   <section class="code-style">
    <video title="A video showing a 2d maze being downloaded, then a Python terminal building a Usd file at a specified location, then a 3d model of the first maze in the program Blender, then 3d rendered images of a large, high-density maze." class="img-bordered" autoplay controls muted>
