@@ -2,15 +2,21 @@
 <html>
 <head>
   <link rel="stylesheet" type="text/css" href="style.css">
- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.js"></script>
   <title>Game Jam Setup</title>
+ <link rel="icon" type="image/x-icon" href="Images/Site/Sorrel_Icon.png">
+  <base href="https://hk-oxalis.github.io/">
+  <script>
+  function resizeIframe(obj) {
+    obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+  }
+    </script>
 </head>
 <body>
   <header>
     <h1>
       My Game Jam Templates
     </h1>
-    
+    <iframe src="Nav_Bar.html"  onload="resizeIframe(this)"></iframe>
   </header>
    
  <section class="code-style">
