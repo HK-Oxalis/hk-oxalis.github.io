@@ -63,6 +63,11 @@ iframe{
   font-size: 20vmin;
 }
 
+.nav img{
+  width: 1em;
+  height: 1em;
+}
+
 .embedded-item p {
   font-size: 5vmin;
 }
