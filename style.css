@@ -12,6 +12,10 @@ html, body {
   font-size: 5vmin;
   text-align: center;
 }
+body{
+  background-image: url(Images/Site/Background.png); 
+  background-size: 100% auto;
+}
 p {
   margin: auto;
   background-color: var(--pale-green);
