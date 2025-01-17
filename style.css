@@ -73,6 +73,10 @@ iframe{
   height: 1em;
 }
 
+.embedded-item{
+  background-image: none;
+}
+
 .embedded-item p {
   font-size: 5vmin;
 }
