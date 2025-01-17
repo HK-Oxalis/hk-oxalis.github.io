@@ -4,13 +4,20 @@
   <link rel="stylesheet" type="text/css" href="style.css">
  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.js"></script>
   <title>Palettisation</title>
+ <link rel="icon" type="image/x-icon" href="Images/Site/Sorrel_Icon.png">
+  <base href="https://hk-oxalis.github.io/">
+  <script>
+  function resizeIframe(obj) {
+    obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+  }
+  </script>
 </head>
 <body>
   <header>
     <h1>
       Applying Palettes To Images
     </h1>
-    
+    <iframe src="Nav_Bar.html"  onload="resizeIframe(this)"></iframe>
   </header>
    
  <section class="code-style">
@@ -123,10 +130,5 @@
   <p>I think I’ve knocked the frame time down to about 0.36ms, so that’s some improvement. I’m not quite sure what I’m doing with the profiler, but that sounds good, so I’ll leave it there for now.</p>
  </section>
 
- <footer class="code-style">
-    <ul>
-      <li> <a href="index.html">Home</a></li>
-    </ul>
-  </footer>
 </body>
 </html>
