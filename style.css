@@ -10,6 +10,7 @@
 html, body {
   background-color: var(--dull-green);
   font-size: 5vmin;
+  font-family: Verdana, sans-serif;
   text-align: center;
 }
 body{
