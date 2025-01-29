@@ -39,22 +39,24 @@
 
   <section class="code-style">
     <h2>Implementation</h2>
+    <img src="Images/Lichen_2d/Lichen_Sim.png" alt="A black and white image of a lichen-like shape made out of small circles.">
     <p> My first low resolution simulations went well, but when I started to make the cell size smaller and the cell count larger, that’s when things started to get interesting. </p>
-    
+    <img src="Images/Lichen_2d/Lichen_Sim_OneArm.png" alt="A dense lichen-like shape with several arms, one that stretches up in a long, thin, golden ratio-like spiral.">
     <p>As you can see here, it developed into a single large, spiralling arm, not a rounded lichen at all. I think this is because I’m spawning all of my particles at the same time, not one at a time as the paper does. </p>
-
     <p>I didn’t think it would make a difference, but the paper mentions that they should be spawned far enough away their behaviour is the same as if they originated infinitely far away. Maybe the little bits of interaction that happen when multiple particles stick at the same time is enough to throw off the mathematical equilibrium and create a single long arm like this? It happened every time with these small particles and large spawning radius, and it cleared up when I switched to sending them one at a time.</p>
 
+    <img src="Images/Lichen_2d/Lichen_Sim_Spiral.png" alt="A dense lichen-like shape made out of many branching arms. The arms all curve slightly in a clockwise direction.">
     <p>Even then, there’s still a visible clockwise spiral. I think that one's because of one of the ‘sticking’ steps.</p>
-
+    <img src="Images/Lichen_2d/Lichen_Sim_PaperScreenshot.png" alt="A digram from a scientific paper, subtitled Figure 6-5: Before a walker is added to the cluster, it is moved backward to the point of intersection and then rotated until it touches another element.">
     <p>The paper doesn’t mention how this rotation is calculated, and my initial improvised approach was always rotating them clockwise, which creates these spirals. Instead, I used this line of code <span class="code-snippet">float clockwise_Adjust = ceil(ofRandom(2)) == 1? 0.1 : -0.1; </span> to randomise which direction the random walker rotates in. This reduces the obvious spiralling pattern, although I still feel like there’s some bias.
     </p>
 
+    <img src="Images/Lichen_2d/Lichen_Sim_Spiral_Less.png" alt="A dense lichen-like shape made out of many branching arms. The arms might be curving in one direction above others.">
     <p>Maybe it’s just my imagination, but do you notice how the anticlockwise faces seem to be a bit smoother? </p>
     <p>I did some measurements of generation speed, and I found that one of the major delays was when a particle would get stuck moving at the slowest speed in an area without any settled clusters. </p>
     <p>One of the optimisations the paper suggests is to make the particles take larger steps when they are outside of the settled cluster’s range, which speeds up the random walks immensely, but it only tests the range with a radius, assuming it’s a perfect circle. In extremely not-round cases, this slows the particles down drastically without any chance of them meeting the settled cluster. 
     </p>
-
+    <img src="Images/Lichen_2d/Lichen_Sim_BoundingDiagram.png" alt="A diagram of a large, dense lichen-like shape. There's a circle drawn around it in red that has a lot of empty space. There is also a blue rectangle drawn around it that fits the shape much closer.">
     <p>Instead, by using a rectangular bounding box, we can speed up the steps without adding much more computational load. There’s still cases where the particle is wandering around in the middle of nowhere, but the worst-case scenarios are limited. This optimisation becomes less useful the more exactly circular the lichen becomes, but my generations seem to generally end up with an off-centre profile.
     </p>
   </section>
