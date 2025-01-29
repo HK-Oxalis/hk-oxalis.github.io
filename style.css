@@ -19,6 +19,7 @@ body{
 }
 p {
   margin: auto;
+  padding: 1vmin;
   background-color: var(--pale-green);
   font-size: 3vmin;
 }
