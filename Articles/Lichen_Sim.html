@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <base href="https://hk-oxalis.github.io/">
+  <link rel="icon" type="image/x-icon" href="Images/Site/Sorrel_Icon.png">
+  <title>Lichen Pattern Simulation</title>
+  <script>
+  function resizeIframe(obj) {
+    obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+  }
+    </script>
+  
+</head>
+<body>
+  <header>
+    <h1>
+      Patterns You'll Like-en!
+    </h1>
+    <iframe src="Nav_Bar.html"  onload="resizeIframe(this)"></iframe>
+    
+  </header>
+  <section class="code-style">
+    <h2>Introduction</h2>
+    <p>One of my programming inspirations is the youtube channel The Coding Train, which frequently features breakdowns and implementations of scholarly articles that can be used for generative art. While I started watching as a beginner, I’ve recently found some success looking into their source material for more information. </p>
+
+<p>I’ve also been trying to learn the processing-adjacent library OpenFrameworks, which isn’t covered by the Coding Train channel, so I decided to go searching out my own source to re-implement. </p>
+
+<p>This project is an implementation of the lichen pattern generation algorithm described by Robert Sumner in his thesis, Pattern Formation in Lichen. It’s written in C++ using the OpenFrameworks library, and I did it without any external resources beyond the OpenFrameworks documentation
+</p>
+  </section>
+
+
+</body>
+</html>
