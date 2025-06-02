@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <base href="https://hk-oxalis.github.io/">
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="slideshow.js" defer></script>
     <script>
   function resizeIframe(obj) {
     obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
   }
-    </script>
+</script>
     <title>HK-Oxalis</title>
     <link rel="icon" type="image/x-icon" href="Images/Site/Sorrel_Icon.png">
     <base href="https://hk-oxalis.github.io/">
@@ -29,6 +30,8 @@
       <section class="flex-container">
         <div class="flex-item code-style">          
           <h2>Code</h2>
+<iframe src="Articles\Resonant_Sceptre_Embeddable.html" onload="resizeIframe(this)"></iframe>
+          
           <article class="code-style">
             <img src="Images/Lichen_2d/Lichen_Sim_Big.png">
             <p>I decided to try learning the C++ OpenFrameworks library by implementing an <a href="Articles/Lichen_Sim.html">algorithm that simulates lichen growth</a>, as detailed in a <a href="https://groups.csail.mit.edu/graphics/pubs/thesis_sumner.pdf">2001 paper by Robert Sumner.</a></p>
@@ -107,7 +110,7 @@
               <span class="dot" onclick="set_Slide(5)"></span>
             </div>
           
-          <h2>Dolls</h2>
+          <h2>Crafts</h2>
           <article class="doll-style">
             <p> <a href="wooden_Owls.html"> Here's </a> my process of figuring out how best to print these wooden owls with rotating heads!</p>
             <img src="Doll_Photos/Owl_Prototypes1.jpg" alt="Two rows of 3d printed owls on a cluttered, green work mat. There are five in the front row that are noticably rougher, with pronounced horizontal lines and splinter-like imperfections. The four in the back are larger and almost completely smooth.">
