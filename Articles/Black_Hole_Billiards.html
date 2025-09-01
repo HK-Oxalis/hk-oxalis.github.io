@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <base href="https://hk-oxalis.github.io/">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/x-icon" href="Images/Site/Sorrel_Icon.png">
+    <title>Black Hole Billiards</title>
+    <script>
+  function resizeIframe(obj) {
+    obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+  }
+    </script>
+
+</head>
+<body>
+    <header>
+        <h1>
+            Cosmic Shaders
+        </h1>
+
+        <iframe src="Nav_Bar.html" onload="resizeIframe(this)"></iframe>
+
+    </header>
+
+    <section class="code-style">
+        <h2> Introduction </h2>
+        <p>For the GMTK game jam 2025, after my failure to follow through last year, I decided to stick with something that felt achievable but had space for ambition.</p>
+        <p>The theme was 'loop', so my concept was Black Hole Billiards, a game where you try and control planets in orbit around you and land them in pockets to score points.</p>
+        <p>And instead of fussing around with pixel art or 3d models, I was going to do all the art through shaders!</p>
+        <p>Here's each of those shaders one by one!</p>
+    </section>
+
+    <section class="code-style">
+        <h2>Black Hole</h2>
+        <img src="Images\Black_Hole_Billiards\Single_Black_Hole.gif"/>
+        <p>For the titular player avatar, I kind of cheated to get the right effect. Of course, a real black hole's appearance is based on complex light physics in the void of space, but this one is basically a paper cut-out and a ping-pong ball.</p>
+        <img src="Images\Black_Hole_Billiards\Single_Black_Hole_Angle.png"/>
+        <p>The orange corona effect is made out of two pieces, pictured below, and I use polar coordinates to scroll noise over it, creating the spiralling effect. </p>
+        <img src="Images\Black_Hole_Billiards\Single_Black_Hole_Centre.png"/>
+        <img src="Images\Black_Hole_Billiards\Single_Black_Hole_Round.png" />
+    </section>
+</body>
+</html>
