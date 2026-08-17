@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Game Jam on HK Oxalis Portfolio Website</title>
+    <link>http://localhost:1313/tags/game-jam/</link>
+    <description>Recent content in Game Jam on HK Oxalis Portfolio Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>HSFK2017@gmail.com (H K)</managingEditor>
+    <webMaster>HSFK2017@gmail.com (H K)</webMaster>
+    <copyright>© 2026 H K</copyright>
+    <lastBuildDate>Sun, 03 Aug 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/game-jam/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Cosmic shaders for the GMTK game jam</title>
+      <link>http://localhost:1313/en/posts/black_hole_billards/</link>
+      <pubDate>Sun, 03 Aug 2025 00:00:00 +0000</pubDate>
+      <author>HSFK2017@gmail.com (H K)</author>
+      <guid>http://localhost:1313/en/posts/black_hole_billards/</guid>
+      <description>For the GMTK game jam 2025, I made a gravity-themed billiards game in Godot, with all art made procedurally with shaders</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/en/posts/black_hole_billards/feature_Black_Hole_Billiards_Title.png" />
+    </item>
+    
+    <item>
+      <title>Bubble Solution</title>
+      <link>http://localhost:1313/en/game_jams/bubble_solution/</link>
+      <pubDate>Tue, 28 Jan 2025 00:00:00 +0000</pubDate>
+      <author>HSFK2017@gmail.com (H K)</author>
+      <guid>http://localhost:1313/en/game_jams/bubble_solution/</guid>
+      <description>A puzzle-platformer made in a group of six in Unreal Engine 5 in 3 days. This was my first time as the least experience member of a team, and I learned a lot from watching everyone else.</description>
+      
+    </item>
+    
+    <item>
+      <title>A Relaxing Autumn Drive</title>
+      <link>http://localhost:1313/en/game_jams/relaxing_autumn/</link>
+      <pubDate>Sun, 27 Oct 2024 00:00:00 +0000</pubDate>
+      <author>HSFK2017@gmail.com (H K)</author>
+      <guid>http://localhost:1313/en/game_jams/relaxing_autumn/</guid>
+      <description>A cozy driving game made using Godot in 3 days. I tried using Blender&amp;rsquo;s geometry nodes for the environment, but misunderstood the exporting process, resulting in very poor performance.</description>
+      
+    </item>
+    
+    <item>
+      <title>Petals in the Wind</title>
+      <link>http://localhost:1313/en/game_jams/petals_in_wind/</link>
+      <pubDate>Mon, 01 Apr 2024 00:00:00 +0000</pubDate>
+      <author>HSFK2017@gmail.com (H K)</author>
+      <guid>http://localhost:1313/en/game_jams/petals_in_wind/</guid>
+      <description>A system-based minigame made solo using Godot in 3 days about growing flowers to score points. It has problems with font scaling, but the core data-based programming architecture worked well.</description>
+      
+    </item>
+    
+    <item>
+      <title>Still Life In Two Dimensions</title>
+      <link>http://localhost:1313/en/game_jams/still_life/</link>
+      <pubDate>Mon, 29 May 2023 00:00:00 +0000</pubDate>
+      <author>HSFK2017@gmail.com (H K)</author>
+      <guid>http://localhost:1313/en/game_jams/still_life/</guid>
+      <description>A creepy puzzle game made alongside a composer using Unity in 10 days. The puzzles were a bit too hard, but I like the visual effect of the pressed flowers.</description>
+      
+    </item>
+    
+    <item>
+      <title>Go Up</title>
+      <link>http://localhost:1313/en/game_jams/go_up/</link>
+      <pubDate>Sun, 04 Dec 2022 00:00:00 +0000</pubDate>
+      <author>HSFK2017@gmail.com (H K)</author>
+      <guid>http://localhost:1313/en/game_jams/go_up/</guid>
+      <description>An atmospheric visual novel made solo in Ren&amp;rsquo;Py in 7 days. My first foray into game-making, but I&amp;rsquo;m proud of the museum scene.</description>
+      
+    </item>
+    
+  </channel>
+</rss>

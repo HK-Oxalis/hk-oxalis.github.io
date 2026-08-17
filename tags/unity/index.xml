@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Unity on HK Oxalis Portfolio Website</title>
+    <link>http://localhost:1313/tags/unity/</link>
+    <description>Recent content in Unity on HK Oxalis Portfolio Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>HSFK2017@gmail.com (H K)</managingEditor>
+    <webMaster>HSFK2017@gmail.com (H K)</webMaster>
+    <copyright>© 2026 H K</copyright>
+    <lastBuildDate>Mon, 02 Jun 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/unity/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Wood-cut markmaking for a turn-based rpg</title>
+      <link>http://localhost:1313/en/posts/resonant_sceptre/</link>
+      <pubDate>Mon, 02 Jun 2025 00:00:00 +0000</pubDate>
+      <author>HSFK2017@gmail.com (H K)</author>
+      <guid>http://localhost:1313/en/posts/resonant_sceptre/</guid>
+      <description>Again using the OpenUSD Python API, I created a script to generate 3d printable models from images</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/en/posts/resonant_sceptre/feature_Forest_Render.png" />
+    </item>
+    
+    <item>
+      <title>Still Life In Two Dimensions</title>
+      <link>http://localhost:1313/en/game_jams/still_life/</link>
+      <pubDate>Mon, 29 May 2023 00:00:00 +0000</pubDate>
+      <author>HSFK2017@gmail.com (H K)</author>
+      <guid>http://localhost:1313/en/game_jams/still_life/</guid>
+      <description>A creepy puzzle game made alongside a composer using Unity in 10 days. The puzzles were a bit too hard, but I like the visual effect of the pressed flowers.</description>
+      
+    </item>
+    
+  </channel>
+</rss>
