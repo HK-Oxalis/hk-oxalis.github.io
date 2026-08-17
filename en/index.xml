@@ -2,14 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Homepage on HK Oxalis Portfolio Website</title>
-    <link>http://localhost:1313/en/</link>
+    <link>https://hk-oxalis.github.io/en/</link>
     <description>Recent content in Homepage on HK Oxalis Portfolio Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>HSFK2017@gmail.com (H K)</managingEditor>
     <webMaster>HSFK2017@gmail.com (H K)</webMaster>
     <copyright>© 2026 H K</copyright>
-    <lastBuildDate></lastBuildDate><atom:link href="http://localhost:1313/en/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate></lastBuildDate><atom:link href="https://hk-oxalis.github.io/en/index.xml" rel="self" type="application/rss+xml" />
     
   </channel>
 </rss>

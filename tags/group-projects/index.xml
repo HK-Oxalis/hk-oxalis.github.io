@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Group Projects on HK Oxalis Portfolio Website</title>
-    <link>http://localhost:1313/tags/group-projects/</link>
+    <link>https://hk-oxalis.github.io/tags/group-projects/</link>
     <description>Recent content in Group Projects on HK Oxalis Portfolio Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>HSFK2017@gmail.com (H K)</managingEditor>
     <webMaster>HSFK2017@gmail.com (H K)</webMaster>
     <copyright>© 2026 H K</copyright>
-    <lastBuildDate>Tue, 28 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/group-projects/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 28 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://hk-oxalis.github.io/tags/group-projects/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Bubble Solution</title>
-      <link>http://localhost:1313/en/game_jams/bubble_solution/</link>
+      <link>https://hk-oxalis.github.io/en/game_jams/bubble_solution/</link>
       <pubDate>Tue, 28 Jan 2025 00:00:00 +0000</pubDate>
       <author>HSFK2017@gmail.com (H K)</author>
-      <guid>http://localhost:1313/en/game_jams/bubble_solution/</guid>
+      <guid>https://hk-oxalis.github.io/en/game_jams/bubble_solution/</guid>
       <description>A puzzle-platformer made in a group of six in Unreal Engine 5 in 3 days. This was my first time as the least experience member of a team, and I learned a lot from watching everyone else.</description>
       
     </item>

@@ -2,43 +2,43 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>2d on HK Oxalis Portfolio Website</title>
-    <link>http://localhost:1313/tags/2d/</link>
+    <link>https://hk-oxalis.github.io/tags/2d/</link>
     <description>Recent content in 2d on HK Oxalis Portfolio Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>HSFK2017@gmail.com (H K)</managingEditor>
     <webMaster>HSFK2017@gmail.com (H K)</webMaster>
     <copyright>© 2026 H K</copyright>
-    <lastBuildDate>Thu, 06 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/2d/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 06 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://hk-oxalis.github.io/tags/2d/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Lichen Pattern Simulation</title>
-      <link>http://localhost:1313/en/posts/lichen/</link>
+      <link>https://hk-oxalis.github.io/en/posts/lichen/</link>
       <pubDate>Thu, 06 Feb 2025 00:00:00 +0000</pubDate>
       <author>HSFK2017@gmail.com (H K)</author>
-      <guid>http://localhost:1313/en/posts/lichen/</guid>
+      <guid>https://hk-oxalis.github.io/en/posts/lichen/</guid>
       <description>I used the C++ OpenFrameworks library to create a lichen visual simulation, following a scientific paper</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/en/posts/lichen/feature_Lichen_Sim.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://hk-oxalis.github.io/en/posts/lichen/feature_Lichen_Sim.png" />
     </item>
     
     <item>
       <title>Applying palettes to images with shaders</title>
-      <link>http://localhost:1313/en/posts/palettisation/</link>
+      <link>https://hk-oxalis.github.io/en/posts/palettisation/</link>
       <pubDate>Mon, 22 Jul 2024 00:00:00 +0000</pubDate>
       <author>HSFK2017@gmail.com (H K)</author>
-      <guid>http://localhost:1313/en/posts/palettisation/</guid>
+      <guid>https://hk-oxalis.github.io/en/posts/palettisation/</guid>
       <description>I wrote a shader using GLSL to align the colours in an image to a palette</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/en/posts/palettisation/feature_Betta_HuePalettised%20-%20Copy.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://hk-oxalis.github.io/en/posts/palettisation/feature_Betta_HuePalettised%20-%20Copy.png" />
     </item>
     
     <item>
       <title>Dithering shader</title>
-      <link>http://localhost:1313/en/posts/dithering/</link>
+      <link>https://hk-oxalis.github.io/en/posts/dithering/</link>
       <pubDate>Thu, 13 Jun 2024 00:00:00 +0000</pubDate>
       <author>HSFK2017@gmail.com (H K)</author>
-      <guid>http://localhost:1313/en/posts/dithering/</guid>
+      <guid>https://hk-oxalis.github.io/en/posts/dithering/</guid>
       <description>A quick glsl dithering shader live in browser</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/en/posts/dithering/feature_Dithering_Jade_Hare.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://hk-oxalis.github.io/en/posts/dithering/feature_Dithering_Jade_Hare.png" />
     </item>
     
   </channel>

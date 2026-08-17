@@ -2,43 +2,43 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Glsl on HK Oxalis Portfolio Website</title>
-    <link>http://localhost:1313/tags/glsl/</link>
+    <link>https://hk-oxalis.github.io/tags/glsl/</link>
     <description>Recent content in Glsl on HK Oxalis Portfolio Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>HSFK2017@gmail.com (H K)</managingEditor>
     <webMaster>HSFK2017@gmail.com (H K)</webMaster>
     <copyright>© 2026 H K</copyright>
-    <lastBuildDate>Sun, 03 Aug 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/glsl/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 03 Aug 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://hk-oxalis.github.io/tags/glsl/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Cosmic shaders for the GMTK game jam</title>
-      <link>http://localhost:1313/en/posts/black_hole_billards/</link>
+      <link>https://hk-oxalis.github.io/en/posts/black_hole_billards/</link>
       <pubDate>Sun, 03 Aug 2025 00:00:00 +0000</pubDate>
       <author>HSFK2017@gmail.com (H K)</author>
-      <guid>http://localhost:1313/en/posts/black_hole_billards/</guid>
+      <guid>https://hk-oxalis.github.io/en/posts/black_hole_billards/</guid>
       <description>For the GMTK game jam 2025, I made a gravity-themed billiards game in Godot, with all art made procedurally with shaders</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/en/posts/black_hole_billards/feature_Black_Hole_Billiards_Title.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://hk-oxalis.github.io/en/posts/black_hole_billards/feature_Black_Hole_Billiards_Title.png" />
     </item>
     
     <item>
       <title>Applying palettes to images with shaders</title>
-      <link>http://localhost:1313/en/posts/palettisation/</link>
+      <link>https://hk-oxalis.github.io/en/posts/palettisation/</link>
       <pubDate>Mon, 22 Jul 2024 00:00:00 +0000</pubDate>
       <author>HSFK2017@gmail.com (H K)</author>
-      <guid>http://localhost:1313/en/posts/palettisation/</guid>
+      <guid>https://hk-oxalis.github.io/en/posts/palettisation/</guid>
       <description>I wrote a shader using GLSL to align the colours in an image to a palette</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/en/posts/palettisation/feature_Betta_HuePalettised%20-%20Copy.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://hk-oxalis.github.io/en/posts/palettisation/feature_Betta_HuePalettised%20-%20Copy.png" />
     </item>
     
     <item>
       <title>Dithering shader</title>
-      <link>http://localhost:1313/en/posts/dithering/</link>
+      <link>https://hk-oxalis.github.io/en/posts/dithering/</link>
       <pubDate>Thu, 13 Jun 2024 00:00:00 +0000</pubDate>
       <author>HSFK2017@gmail.com (H K)</author>
-      <guid>http://localhost:1313/en/posts/dithering/</guid>
+      <guid>https://hk-oxalis.github.io/en/posts/dithering/</guid>
       <description>A quick glsl dithering shader live in browser</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/en/posts/dithering/feature_Dithering_Jade_Hare.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://hk-oxalis.github.io/en/posts/dithering/feature_Dithering_Jade_Hare.png" />
     </item>
     
   </channel>

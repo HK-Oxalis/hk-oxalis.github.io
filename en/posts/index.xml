@@ -2,93 +2,93 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>All Posts on HK Oxalis Portfolio Website</title>
-    <link>http://localhost:1313/en/posts/</link>
+    <link>https://hk-oxalis.github.io/en/posts/</link>
     <description>Recent content in All Posts on HK Oxalis Portfolio Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>HSFK2017@gmail.com (H K)</managingEditor>
     <webMaster>HSFK2017@gmail.com (H K)</webMaster>
     <copyright>© 2026 H K</copyright>
-    <lastBuildDate>Mon, 17 Aug 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/en/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 17 Aug 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://hk-oxalis.github.io/en/posts/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Blender Plugin For Making Enamel Pins</title>
-      <link>http://localhost:1313/en/posts/enamel_pin/</link>
+      <link>https://hk-oxalis.github.io/en/posts/enamel_pin/</link>
       <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
       <author>HSFK2017@gmail.com (H K)</author>
-      <guid>http://localhost:1313/en/posts/enamel_pin/</guid>
+      <guid>https://hk-oxalis.github.io/en/posts/enamel_pin/</guid>
       <description>For the 2026 Artfight competition, I had a go at making a blender plugin that reads images and creates enamel pin models</description>
-      
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://hk-oxalis.github.io/en/posts/enamel_pin/feature_Molten_Render_Staged.png" />
     </item>
     
     <item>
       <title>Cosmic shaders for the GMTK game jam</title>
-      <link>http://localhost:1313/en/posts/black_hole_billards/</link>
+      <link>https://hk-oxalis.github.io/en/posts/black_hole_billards/</link>
       <pubDate>Sun, 03 Aug 2025 00:00:00 +0000</pubDate>
       <author>HSFK2017@gmail.com (H K)</author>
-      <guid>http://localhost:1313/en/posts/black_hole_billards/</guid>
+      <guid>https://hk-oxalis.github.io/en/posts/black_hole_billards/</guid>
       <description>For the GMTK game jam 2025, I made a gravity-themed billiards game in Godot, with all art made procedurally with shaders</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/en/posts/black_hole_billards/feature_Black_Hole_Billiards_Title.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://hk-oxalis.github.io/en/posts/black_hole_billards/feature_Black_Hole_Billiards_Title.png" />
     </item>
     
     <item>
       <title>Wood-cut markmaking for a turn-based rpg</title>
-      <link>http://localhost:1313/en/posts/resonant_sceptre/</link>
+      <link>https://hk-oxalis.github.io/en/posts/resonant_sceptre/</link>
       <pubDate>Mon, 02 Jun 2025 00:00:00 +0000</pubDate>
       <author>HSFK2017@gmail.com (H K)</author>
-      <guid>http://localhost:1313/en/posts/resonant_sceptre/</guid>
+      <guid>https://hk-oxalis.github.io/en/posts/resonant_sceptre/</guid>
       <description>Again using the OpenUSD Python API, I created a script to generate 3d printable models from images</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/en/posts/resonant_sceptre/feature_Forest_Render.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://hk-oxalis.github.io/en/posts/resonant_sceptre/feature_Forest_Render.png" />
     </item>
     
     <item>
       <title>Lichen Pattern Simulation</title>
-      <link>http://localhost:1313/en/posts/lichen/</link>
+      <link>https://hk-oxalis.github.io/en/posts/lichen/</link>
       <pubDate>Thu, 06 Feb 2025 00:00:00 +0000</pubDate>
       <author>HSFK2017@gmail.com (H K)</author>
-      <guid>http://localhost:1313/en/posts/lichen/</guid>
+      <guid>https://hk-oxalis.github.io/en/posts/lichen/</guid>
       <description>I used the C++ OpenFrameworks library to create a lichen visual simulation, following a scientific paper</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/en/posts/lichen/feature_Lichen_Sim.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://hk-oxalis.github.io/en/posts/lichen/feature_Lichen_Sim.png" />
     </item>
     
     <item>
       <title>Programmatically Generating Spinning Ornaments</title>
-      <link>http://localhost:1313/en/posts/spinners/</link>
+      <link>https://hk-oxalis.github.io/en/posts/spinners/</link>
       <pubDate>Thu, 16 Jan 2025 00:00:00 +0000</pubDate>
       <author>HSFK2017@gmail.com (H K)</author>
-      <guid>http://localhost:1313/en/posts/spinners/</guid>
+      <guid>https://hk-oxalis.github.io/en/posts/spinners/</guid>
       <description>Again using the OpenUSD Python API, I created a script to generate 3d printable models from images</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/en/posts/spinners/feature_Angel_Spinner.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://hk-oxalis.github.io/en/posts/spinners/feature_Angel_Spinner.png" />
     </item>
     
     <item>
       <title>3D Mazes with JSON and USD</title>
-      <link>http://localhost:1313/en/posts/3d_mazes/</link>
+      <link>https://hk-oxalis.github.io/en/posts/3d_mazes/</link>
       <pubDate>Wed, 16 Oct 2024 00:00:00 +0000</pubDate>
       <author>HSFK2017@gmail.com (H K)</author>
-      <guid>http://localhost:1313/en/posts/3d_mazes/</guid>
+      <guid>https://hk-oxalis.github.io/en/posts/3d_mazes/</guid>
       <description>Using the Python API for OpenUSD, I processed the JSON output of a Javascript maze project into 3D models</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/en/posts/3d_mazes/feature_3d_Maze_High_Density.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://hk-oxalis.github.io/en/posts/3d_mazes/feature_3d_Maze_High_Density.png" />
     </item>
     
     <item>
       <title>Applying palettes to images with shaders</title>
-      <link>http://localhost:1313/en/posts/palettisation/</link>
+      <link>https://hk-oxalis.github.io/en/posts/palettisation/</link>
       <pubDate>Mon, 22 Jul 2024 00:00:00 +0000</pubDate>
       <author>HSFK2017@gmail.com (H K)</author>
-      <guid>http://localhost:1313/en/posts/palettisation/</guid>
+      <guid>https://hk-oxalis.github.io/en/posts/palettisation/</guid>
       <description>I wrote a shader using GLSL to align the colours in an image to a palette</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/en/posts/palettisation/feature_Betta_HuePalettised%20-%20Copy.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://hk-oxalis.github.io/en/posts/palettisation/feature_Betta_HuePalettised%20-%20Copy.png" />
     </item>
     
     <item>
       <title>Dithering shader</title>
-      <link>http://localhost:1313/en/posts/dithering/</link>
+      <link>https://hk-oxalis.github.io/en/posts/dithering/</link>
       <pubDate>Thu, 13 Jun 2024 00:00:00 +0000</pubDate>
       <author>HSFK2017@gmail.com (H K)</author>
-      <guid>http://localhost:1313/en/posts/dithering/</guid>
+      <guid>https://hk-oxalis.github.io/en/posts/dithering/</guid>
       <description>A quick glsl dithering shader live in browser</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/en/posts/dithering/feature_Dithering_Jade_Hare.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://hk-oxalis.github.io/en/posts/dithering/feature_Dithering_Jade_Hare.png" />
     </item>
     
   </channel>
