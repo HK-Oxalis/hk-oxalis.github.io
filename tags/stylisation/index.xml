@@ -22,6 +22,16 @@
     </item>
     
     <item>
+      <title>Wood-cut markmaking for a turn-based rpg</title>
+      <link>https://hk-oxalis.github.io/en/posts/resonant_sceptre/</link>
+      <pubDate>Mon, 02 Jun 2025 00:00:00 +0000</pubDate>
+      <author>HSFK2017@gmail.com (H K)</author>
+      <guid>https://hk-oxalis.github.io/en/posts/resonant_sceptre/</guid>
+      <description>Again using the OpenUSD Python API, I created a script to generate 3d printable models from images</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://hk-oxalis.github.io/en/posts/resonant_sceptre/feature_Forest_Render.png" />
+    </item>
+    
+    <item>
       <title>Applying palettes to images with shaders</title>
       <link>https://hk-oxalis.github.io/en/posts/palettisation/</link>
       <pubDate>Mon, 22 Jul 2024 00:00:00 +0000</pubDate>
