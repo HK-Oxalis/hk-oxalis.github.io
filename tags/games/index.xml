@@ -9,7 +9,17 @@
     <managingEditor>HSFK2017@gmail.com (H K)</managingEditor>
     <webMaster>HSFK2017@gmail.com (H K)</webMaster>
     <copyright>© 2026 H K</copyright>
-    <lastBuildDate>Fri, 19 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://hk-oxalis.github.io/tags/games/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 05 Jul 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://hk-oxalis.github.io/tags/games/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Innsmouth Marine Biology</title>
+      <link>https://hk-oxalis.github.io/en/game_jams/innsmouth_marine_biology/</link>
+      <pubDate>Sun, 05 Jul 2026 00:00:00 +0000</pubDate>
+      <author>HSFK2017@gmail.com (H K)</author>
+      <guid>https://hk-oxalis.github.io/en/game_jams/innsmouth_marine_biology/</guid>
+      <description>An horror mystery game made in Godot in 7 days in a group of three people. The code part was a pretty simple data-driven tree file structure, but I designed the UI for the fictional OS #, which I&amp;rsquo;m proud of.</description>
+      
+    </item>
     
     <item>
       <title>Occult Mystery Game in Unity</title>
@@ -22,6 +32,16 @@
     </item>
     
     <item>
+      <title>Black Hole Billiards</title>
+      <link>https://hk-oxalis.github.io/en/game_jams/black_hole_billiards_mini/</link>
+      <pubDate>Sun, 03 Aug 2025 00:00:00 +0000</pubDate>
+      <author>HSFK2017@gmail.com (H K)</author>
+      <guid>https://hk-oxalis.github.io/en/game_jams/black_hole_billiards_mini/</guid>
+      <description>An arcade-style game made in Godot in 4 days. I made all the visuals in shaders, which you can see in my main breakdown article. I&amp;rsquo;m happy with the gameplay too. One of my better jam results.</description>
+      
+    </item>
+    
+    <item>
       <title>Cosmic shaders for the GMTK game jam</title>
       <link>https://hk-oxalis.github.io/en/posts/black_hole_billards/</link>
       <pubDate>Sun, 03 Aug 2025 00:00:00 +0000</pubDate>
@@ -29,6 +49,16 @@
       <guid>https://hk-oxalis.github.io/en/posts/black_hole_billards/</guid>
       <description>For the GMTK game jam 2025, I made a gravity-themed billiards game in Godot, with all art made procedurally with shaders</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://hk-oxalis.github.io/en/posts/black_hole_billards/feature_Black_Hole_Billiards_Title.png" />
+    </item>
+    
+    <item>
+      <title>Forest Of The Night</title>
+      <link>https://hk-oxalis.github.io/en/game_jams/forest_night/</link>
+      <pubDate>Sun, 27 Jul 2025 00:00:00 +0000</pubDate>
+      <author>HSFK2017@gmail.com (H K)</author>
+      <guid>https://hk-oxalis.github.io/en/game_jams/forest_night/</guid>
+      <description>A 3D platforming game made in 36 hours using Godot. I used free environment assets, but because they were high-def, I lost time optimising them for web. The core look still works alright on PC.</description>
+      
     </item>
     
     <item>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>3D on HK Oxalis Portfolio Website</title>
+    <title>3d on HK Oxalis Portfolio Website</title>
     <link>https://hk-oxalis.github.io/tags/3d/</link>
-    <description>Recent content in 3D on HK Oxalis Portfolio Website</description>
+    <description>Recent content in 3d on HK Oxalis Portfolio Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>HSFK2017@gmail.com (H K)</managingEditor>
@@ -29,6 +29,16 @@
       <guid>https://hk-oxalis.github.io/en/posts/two-faced_doll/</guid>
       <description>I designed, 3D printed and sewed a doll to make a stop-motion animation</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://hk-oxalis.github.io/en/posts/two-faced_doll/feature_Mask_Held_Up.png" />
+    </item>
+    
+    <item>
+      <title>Black Hole Billiards</title>
+      <link>https://hk-oxalis.github.io/en/game_jams/black_hole_billiards_mini/</link>
+      <pubDate>Sun, 03 Aug 2025 00:00:00 +0000</pubDate>
+      <author>HSFK2017@gmail.com (H K)</author>
+      <guid>https://hk-oxalis.github.io/en/game_jams/black_hole_billiards_mini/</guid>
+      <description>An arcade-style game made in Godot in 4 days. I made all the visuals in shaders, which you can see in my main breakdown article. I&amp;rsquo;m happy with the gameplay too. One of my better jam results.</description>
+      
     </item>
     
     <item>
@@ -59,6 +69,16 @@
       <guid>https://hk-oxalis.github.io/en/posts/spinners/</guid>
       <description>Again using the OpenUSD Python API, I created a script to generate 3d printable models from images</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://hk-oxalis.github.io/en/posts/spinners/feature_Angel_Spinner.png" />
+    </item>
+    
+    <item>
+      <title>A Relaxing Autumn Drive</title>
+      <link>https://hk-oxalis.github.io/en/game_jams/relaxing_autumn/</link>
+      <pubDate>Sun, 27 Oct 2024 00:00:00 +0000</pubDate>
+      <author>HSFK2017@gmail.com (H K)</author>
+      <guid>https://hk-oxalis.github.io/en/game_jams/relaxing_autumn/</guid>
+      <description>A cozy driving game made using Godot in 3 days. I tried using Blender&amp;rsquo;s geometry nodes for the environment, but misunderstood the exporting process, resulting in very poor performance.</description>
+      
     </item>
     
     <item>

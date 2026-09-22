@@ -9,7 +9,17 @@
     <managingEditor>HSFK2017@gmail.com (H K)</managingEditor>
     <webMaster>HSFK2017@gmail.com (H K)</webMaster>
     <copyright>© 2026 H K</copyright>
-    <lastBuildDate>Fri, 19 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://hk-oxalis.github.io/tags/2d/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 05 Jul 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://hk-oxalis.github.io/tags/2d/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Innsmouth Marine Biology</title>
+      <link>https://hk-oxalis.github.io/en/game_jams/innsmouth_marine_biology/</link>
+      <pubDate>Sun, 05 Jul 2026 00:00:00 +0000</pubDate>
+      <author>HSFK2017@gmail.com (H K)</author>
+      <guid>https://hk-oxalis.github.io/en/game_jams/innsmouth_marine_biology/</guid>
+      <description>An horror mystery game made in Godot in 7 days in a group of three people. The code part was a pretty simple data-driven tree file structure, but I designed the UI for the fictional OS #, which I&amp;rsquo;m proud of.</description>
+      
+    </item>
     
     <item>
       <title>Occult Mystery Game in Unity</title>
