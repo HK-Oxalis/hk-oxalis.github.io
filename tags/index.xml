@@ -9,14 +9,44 @@
     <managingEditor>HSFK2017@gmail.com (H K)</managingEditor>
     <webMaster>HSFK2017@gmail.com (H K)</webMaster>
     <copyright>© 2026 H K</copyright>
-    <lastBuildDate>Mon, 17 Aug 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://hk-oxalis.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 01 Oct 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://hk-oxalis.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>3d</title>
       <link>https://hk-oxalis.github.io/tags/3d/</link>
-      <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 01 Oct 2026 00:00:00 +0000</pubDate>
       <author>HSFK2017@gmail.com (H K)</author>
       <guid>https://hk-oxalis.github.io/tags/3d/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>3d Printing</title>
+      <link>https://hk-oxalis.github.io/tags/3d-printing/</link>
+      <pubDate>Thu, 01 Oct 2026 00:00:00 +0000</pubDate>
+      <author>HSFK2017@gmail.com (H K)</author>
+      <guid>https://hk-oxalis.github.io/tags/3d-printing/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Crafts</title>
+      <link>https://hk-oxalis.github.io/tags/crafts/</link>
+      <pubDate>Thu, 01 Oct 2026 00:00:00 +0000</pubDate>
+      <author>HSFK2017@gmail.com (H K)</author>
+      <guid>https://hk-oxalis.github.io/tags/crafts/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Meshes</title>
+      <link>https://hk-oxalis.github.io/tags/meshes/</link>
+      <pubDate>Thu, 01 Oct 2026 00:00:00 +0000</pubDate>
+      <author>HSFK2017@gmail.com (H K)</author>
+      <guid>https://hk-oxalis.github.io/tags/meshes/</guid>
       <description></description>
       
     </item>
@@ -37,16 +67,6 @@
       <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
       <author>HSFK2017@gmail.com (H K)</author>
       <guid>https://hk-oxalis.github.io/tags/image-processing/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Meshes</title>
-      <link>https://hk-oxalis.github.io/tags/meshes/</link>
-      <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
-      <author>HSFK2017@gmail.com (H K)</author>
-      <guid>https://hk-oxalis.github.io/tags/meshes/</guid>
       <description></description>
       
     </item>
@@ -137,26 +157,6 @@
       <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
       <author>HSFK2017@gmail.com (H K)</author>
       <guid>https://hk-oxalis.github.io/tags/unity/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>3D Printing</title>
-      <link>https://hk-oxalis.github.io/tags/3d-printing/</link>
-      <pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
-      <author>HSFK2017@gmail.com (H K)</author>
-      <guid>https://hk-oxalis.github.io/tags/3d-printing/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Crafts</title>
-      <link>https://hk-oxalis.github.io/tags/crafts/</link>
-      <pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
-      <author>HSFK2017@gmail.com (H K)</author>
-      <guid>https://hk-oxalis.github.io/tags/crafts/</guid>
       <description></description>
       
     </item>

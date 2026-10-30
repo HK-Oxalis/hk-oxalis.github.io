@@ -1,15 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>3D Printing on HK Oxalis Portfolio Website</title>
+    <title>3d Printing on HK Oxalis Portfolio Website</title>
     <link>https://hk-oxalis.github.io/tags/3d-printing/</link>
-    <description>Recent content in 3D Printing on HK Oxalis Portfolio Website</description>
+    <description>Recent content in 3d Printing on HK Oxalis Portfolio Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>HSFK2017@gmail.com (H K)</managingEditor>
     <webMaster>HSFK2017@gmail.com (H K)</webMaster>
     <copyright>© 2026 H K</copyright>
-    <lastBuildDate>Fri, 05 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://hk-oxalis.github.io/tags/3d-printing/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 01 Oct 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://hk-oxalis.github.io/tags/3d-printing/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Custom doll highlights</title>
+      <link>https://hk-oxalis.github.io/en/posts/custom_dolls/</link>
+      <pubDate>Thu, 01 Oct 2026 00:00:00 +0000</pubDate>
+      <author>HSFK2017@gmail.com (H K)</author>
+      <guid>https://hk-oxalis.github.io/en/posts/custom_dolls/</guid>
+      <description>A selection of my 3D printed custom dolls</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://hk-oxalis.github.io/en/posts/custom_dolls/feature_Dolls_Cabinet.jpg" />
+    </item>
     
     <item>
       <title>Stop-Motion Doll Design</title>
@@ -29,6 +39,26 @@
       <guid>https://hk-oxalis.github.io/en/posts/spinners/</guid>
       <description>Again using the OpenUSD Python API, I created a script to generate 3d printable models from images</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://hk-oxalis.github.io/en/posts/spinners/feature_Angel_Spinner.png" />
+    </item>
+    
+    <item>
+      <title>A Mermaid&#39;s Arms</title>
+      <link>https://hk-oxalis.github.io/en/posts/doll_arms/</link>
+      <pubDate>Sun, 30 Jun 2024 00:00:00 +0000</pubDate>
+      <author>HSFK2017@gmail.com (H K)</author>
+      <guid>https://hk-oxalis.github.io/en/posts/doll_arms/</guid>
+      <description>A project to improve the arms for my custom 3D printed dolls</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://hk-oxalis.github.io/en/posts/doll_arms/feature_Mermaid2_JojoPose.jpg" />
+    </item>
+    
+    <item>
+      <title>Owls and wood</title>
+      <link>https://hk-oxalis.github.io/en/posts/wooden_owls/</link>
+      <pubDate>Thu, 13 Jun 2024 00:00:00 +0000</pubDate>
+      <author>HSFK2017@gmail.com (H K)</author>
+      <guid>https://hk-oxalis.github.io/en/posts/wooden_owls/</guid>
+      <description>My design of little, slightly articulated owl toys</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://hk-oxalis.github.io/en/posts/wooden_owls/feature_Owl_Prototypes1.jpg" />
     </item>
     
   </channel>
